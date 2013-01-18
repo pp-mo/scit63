@@ -1,0 +1,28 @@
+Unpacking ./dist_i7/Iris7-1.99.0-xdistrev2
+  Running setup.py egg_info for package from file:///net/home/h05/itpp/py_envs/tmpall/dist_i7/Iris7-1.99.0-xdistrev2
+    VERSION 7 Iris setup.py called : [-c, egg_info, --egg-base, pip-egg-info]
+    
+    warning: no previously-included files matching '*' found under directory 'docs/iris/build'
+    warning: no files found matching '*.cc' under directory 'src'
+    warning: no files found matching '*.cpp' under directory 'src'
+    warning: no files found matching '*.h' under directory 'src'
+Requirement already satisfied (use --upgrade to upgrade): setuptools>=0.6c11 in ./lib/python2.7/site-packages/setuptools-0.6c11-py2.7.egg (from Iris7==1.99.0-xdistrev2)
+Requirement already satisfied (use --upgrade to upgrade): numpy>=1.6 in ./lib/python2.7/site-packages (from Iris7==1.99.0-xdistrev2)
+Requirement already satisfied (use --upgrade to upgrade): scipy>=0.10 in ./lib/python2.7/site-packages (from Iris7==1.99.0-xdistrev2)
+Requirement already satisfied (use --upgrade to upgrade): nose in ./lib/python2.7/site-packages (from Iris7==1.99.0-xdistrev2)
+Requirement already satisfied (use --upgrade to upgrade): pyshp in ./lib/python2.7/site-packages (from Iris7==1.99.0-xdistrev2)
+Requirement already satisfied (use --upgrade to upgrade): shapely in ./lib/python2.7/site-packages (from Iris7==1.99.0-xdistrev2)
+Requirement already satisfied (use --upgrade to upgrade): mock>=1.0.1 in ./lib/python2.7/site-packages (from Iris7==1.99.0-xdistrev2)
+Requirement already satisfied (use --upgrade to upgrade): pyke>=1.1.1 in ./lib/python2.7/site-packages (from Iris7==1.99.0-xdistrev2)
+Requirement already satisfied (use --upgrade to upgrade): netCDF4>=0.9.9 in ./lib/python2.7/site-packages (from Iris7==1.99.0-xdistrev2)
+Installing collected packages: Iris7
+  Running setup.py install for Iris7
+    VERSION 7 Iris setup.py called : [-c, install, --record, /var/tmp/pip-hj9Oap-record/install-record.txt, --single-version-externally-managed, --install-headers, /net/home/h05/itpp/py_envs/tmpall/include/site/python2.7]
+    /net/home/h05/itpp/py_envs/tmpall/bin/python tools/generate_std_names.py etc/cf-standard-name-table.xml build/lib/iris/std_names.py
+    
+    warning: no previously-included files matching '*' found under directory 'docs/iris/build'
+    warning: no files found matching '*.cc' under directory 'src'
+    warning: no files found matching '*.cpp' under directory 'src'
+    warning: no files found matching '*.h' under directory 'src'
+Successfully installed Iris7
+Cleaning up...

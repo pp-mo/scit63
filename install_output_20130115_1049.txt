@@ -1,0 +1,1687 @@
+Downloading/unpacking Iris6
+  Running setup.py egg_info for package Iris6
+    no previously-included directories found matching '.hg'
+    no previously-included directories found matching 'dist'
+    no previously-included directories found matching '*/compiled_krb'
+    no previously-included directories found matching '*/*/compiled_krb'
+    no previously-included directories found matching '*/*/*/compiled_krb'
+    warning: no previously-included files matching '.pyhist' found anywhere in distribution
+    warning: no previously-included files matching '*.pyc' found anywhere in distribution
+    warning: no previously-included files matching '*.pyo' found anywhere in distribution
+    warning: no previously-included files matching '.*.swp' found anywhere in distribution
+    warning: no previously-included files matching '*.orig' found anywhere in distribution
+    zip_safe flag not set; analyzing archive contents...
+    pyke.krb_traceback: module references __file__
+    pyke.ask_wx: module references __file__
+    pyke.knowledge_engine: module references __file__
+    pyke.target_pkg: module references __file__
+    pyke.krb_compiler.kfbparser: module references __file__
+    pyke.krb_compiler.scanner: module references __file__
+    pyke.krb_compiler.krbparser: module references __file__
+    VERSION 6 Iris setup.py called : [-c, egg_info, --egg-base, pip-egg-info]
+    
+    Installed /net/home/h05/itpp/py_envs/tmp_try/build/Iris6/pyke-1.1.1-py2.7.egg
+    
+    warning: no previously-included files matching '*' found under directory 'docs/iris/build'
+    warning: no files found matching '*.cc' under directory 'src'
+    warning: no files found matching '*.cpp' under directory 'src'
+    warning: no files found matching '*.h' under directory 'src'
+Requirement already satisfied (use --upgrade to upgrade): setuptools>=0.6c11 in ./lib/python2.7/site-packages/setuptools-0.6c11-py2.7.egg (from Iris6)
+Requirement already satisfied (use --upgrade to upgrade): numpy>=1.6 in ./lib/python2.7/site-packages (from Iris6)
+Requirement already satisfied (use --upgrade to upgrade): scipy>=0.10 in ./lib/python2.7/site-packages (from Iris6)
+Downloading/unpacking nose (from Iris6)
+  Running setup.py egg_info for package nose
+    
+    no previously-included directories found matching 'doc/.build'
+Downloading/unpacking pyshp (from Iris6)
+  Running setup.py egg_info for package pyshp
+    
+Downloading/unpacking shapely (from Iris6)
+  Running setup.py egg_info for package shapely
+    /net/home/h05/itpp/py_envs/tmp_try/build/shapely/setup.py:9: Warning: Failed to import distribute_setup, continuing without distribute.
+      Warning)
+    /home/h05/itpp/fcm/iris/sci/lib/python2.7/distutils/dist.py:267: UserWarning: Unknown distribution option: 'requires_external'
+      warnings.warn(msg)
+    /home/h05/itpp/fcm/iris/sci/lib/python2.7/distutils/dist.py:267: UserWarning: Unknown distribution option: 'metadata_version'
+      warnings.warn(msg)
+    /home/h05/itpp/fcm/iris/sci/lib/python2.7/distutils/dist.py:267: UserWarning: Unknown distribution option: 'requires_python'
+      warnings.warn(msg)
+    
+Downloading/unpacking mock>=1.0.1 (from Iris6)
+  Running setup.py egg_info for package mock
+    
+    warning: no files found matching '*.png' under directory 'docs'
+    warning: no files found matching '*.css' under directory 'docs'
+    warning: no files found matching '*.html' under directory 'docs'
+    warning: no files found matching '*.js' under directory 'docs'
+Downloading/unpacking pyke>=1.1.1 (from Iris6)
+  Running setup.py egg_info for package pyke
+    
+    no previously-included directories found matching '.hg'
+    no previously-included directories found matching 'dist'
+    no previously-included directories found matching '*/compiled_krb'
+    no previously-included directories found matching '*/*/compiled_krb'
+    no previously-included directories found matching '*/*/*/compiled_krb'
+    warning: no previously-included files matching '.pyhist' found anywhere in distribution
+    warning: no previously-included files matching '*.pyc' found anywhere in distribution
+    warning: no previously-included files matching '*.pyo' found anywhere in distribution
+    warning: no previously-included files matching '.*.swp' found anywhere in distribution
+    warning: no previously-included files matching '*.orig' found anywhere in distribution
+Downloading/unpacking netCDF4>=0.9.9 (from Iris6)
+  Running setup.py egg_info for package netCDF4
+    
+    HDF5_DIR environment variable not set, checking some standard locations ..
+    checking /home/h05/itpp ...
+    checking /usr/local ...
+    checking /sw ...
+    checking /opt ...
+    checking /opt/local ...
+    checking /usr ...
+    HDF5 found in /usr
+    build_src
+    building py_modules sources
+    building extension "netCDF4" sources
+    build_src: building npy-pkg config files
+    
+Installing collected packages: Iris6, nose, pyshp, shapely, mock, pyke, netCDF4
+  Running setup.py install for Iris6
+    VERSION 6 Iris setup.py called : [-c, install, --record, /var/tmp/pip-dNRjQf-record/install-record.txt, --single-version-externally-managed, --install-headers, /net/home/h05/itpp/py_envs/tmp_try/include/site/python2.7]
+    /net/home/h05/itpp/py_envs/tmp_try/bin/python tools/generate_std_names.py etc/cf-standard-name-table.xml build/lib/iris/std_names.py
+    Traceback (most recent call last):
+      File "<string>", line 1, in <module>
+      File "/net/home/h05/itpp/py_envs/tmp_try/build/Iris6/setup.py", line 308, in <module>
+        'std_names': MakeStdNames, 'header_check': HeaderCheck},
+      File "/home/h05/itpp/fcm/iris/sci/lib/python2.7/distutils/core.py", line 152, in setup
+        dist.run_commands()
+      File "/home/h05/itpp/fcm/iris/sci/lib/python2.7/distutils/dist.py", line 953, in run_commands
+        self.run_command(cmd)
+      File "/home/h05/itpp/fcm/iris/sci/lib/python2.7/distutils/dist.py", line 972, in run_command
+        cmd_obj.run()
+      File "/net/home/h05/itpp/py_envs/tmp_try/lib/python2.7/site-packages/setuptools-0.6c11-py2.7.egg/setuptools/command/install.py", line 56, in run
+      File "/home/h05/itpp/fcm/iris/sci/lib/python2.7/distutils/command/install.py", line 563, in run
+        self.run_command('build')
+      File "/home/h05/itpp/fcm/iris/sci/lib/python2.7/distutils/cmd.py", line 326, in run_command
+        self.distribution.run_command(command)
+      File "/home/h05/itpp/fcm/iris/sci/lib/python2.7/distutils/dist.py", line 972, in run_command
+        cmd_obj.run()
+      File "/home/h05/itpp/fcm/iris/sci/lib/python2.7/distutils/command/build.py", line 127, in run
+        self.run_command(cmd_name)
+      File "/home/h05/itpp/fcm/iris/sci/lib/python2.7/distutils/cmd.py", line 326, in run_command
+        self.distribution.run_command(command)
+      File "/home/h05/itpp/fcm/iris/sci/lib/python2.7/distutils/dist.py", line 972, in run_command
+        cmd_obj.run()
+      File "/net/home/h05/itpp/py_envs/tmp_try/build/Iris6/setup.py", line 241, in run
+        import iris.fileformats._pyke_rules
+      File "build/lib/iris/__init__.py", line 105, in <module>
+        import iris.cube
+      File "build/lib/iris/cube.py", line 35, in <module>
+        import iris.analysis
+      File "build/lib/iris/analysis/__init__.py", line 38, in <module>
+        import iris.coords
+      File "build/lib/iris/coords.py", line 34, in <module>
+        import iris.aux_factory
+      File "build/lib/iris/aux_factory.py", line 28, in <module>
+        from iris._cube_coord_common import CFVariableMixin, LimitedAttributeDict
+      File "build/lib/iris/_cube_coord_common.py", line 24, in <module>
+        import iris.unit
+      File "build/lib/iris/unit.py", line 33, in <module>
+        import netcdftime
+    ImportError: No module named netcdftime
+    Complete output from command /net/home/h05/itpp/py_envs/tmp_try/bin/python -c "import setuptools;__file__='/net/home/h05/itpp/py_envs/tmp_try/build/Iris6/setup.py';exec(compile(open(__file__).read().replace('\r\n', '\n'), __file__, 'exec'))" install --record /var/tmp/pip-dNRjQf-record/install-record.txt --single-version-externally-managed --install-headers /net/home/h05/itpp/py_envs/tmp_try/include/site/python2.7:
+    VERSION 6 Iris setup.py called : [-c, install, --record, /var/tmp/pip-dNRjQf-record/install-record.txt, --single-version-externally-managed, --install-headers, /net/home/h05/itpp/py_envs/tmp_try/include/site/python2.7]
+
+running install
+
+running build
+
+running build_py
+
+creating build
+
+creating build/lib
+
+creating build/lib/iris
+
+copying lib/iris/__init__.py -> build/lib/iris
+
+copying lib/iris/_constraints.py -> build/lib/iris
+
+copying lib/iris/_cube_coord_common.py -> build/lib/iris
+
+copying lib/iris/_merge.py -> build/lib/iris
+
+copying lib/iris/aux_factory.py -> build/lib/iris
+
+copying lib/iris/config.py -> build/lib/iris
+
+copying lib/iris/coord_categorisation.py -> build/lib/iris
+
+copying lib/iris/coord_systems.py -> build/lib/iris
+
+copying lib/iris/coords.py -> build/lib/iris
+
+copying lib/iris/cube.py -> build/lib/iris
+
+copying lib/iris/exceptions.py -> build/lib/iris
+
+copying lib/iris/iterate.py -> build/lib/iris
+
+copying lib/iris/palette.py -> build/lib/iris
+
+copying lib/iris/plot.py -> build/lib/iris
+
+copying lib/iris/proxy.py -> build/lib/iris
+
+copying lib/iris/quickplot.py -> build/lib/iris
+
+copying lib/iris/std_names.py -> build/lib/iris
+
+copying lib/iris/symbols.py -> build/lib/iris
+
+copying lib/iris/unit.py -> build/lib/iris
+
+copying lib/iris/util.py -> build/lib/iris
+
+creating build/lib/iris/analysis
+
+copying lib/iris/analysis/__init__.py -> build/lib/iris/analysis
+
+copying lib/iris/analysis/calculus.py -> build/lib/iris/analysis
+
+copying lib/iris/analysis/cartography.py -> build/lib/iris/analysis
+
+copying lib/iris/analysis/geometry.py -> build/lib/iris/analysis
+
+copying lib/iris/analysis/interpolate.py -> build/lib/iris/analysis
+
+copying lib/iris/analysis/maths.py -> build/lib/iris/analysis
+
+copying lib/iris/analysis/trajectory.py -> build/lib/iris/analysis
+
+creating build/lib/iris/fileformats
+
+copying lib/iris/fileformats/__init__.py -> build/lib/iris/fileformats
+
+copying lib/iris/fileformats/cf.py -> build/lib/iris/fileformats
+
+copying lib/iris/fileformats/dot.py -> build/lib/iris/fileformats
+
+copying lib/iris/fileformats/ff.py -> build/lib/iris/fileformats
+
+copying lib/iris/fileformats/grib.py -> build/lib/iris/fileformats
+
+copying lib/iris/fileformats/grib_save_rules.py -> build/lib/iris/fileformats
+
+copying lib/iris/fileformats/manager.py -> build/lib/iris/fileformats
+
+copying lib/iris/fileformats/mosig_cf_map.py -> build/lib/iris/fileformats
+
+copying lib/iris/fileformats/netcdf.py -> build/lib/iris/fileformats
+
+copying lib/iris/fileformats/nimrod.py -> build/lib/iris/fileformats
+
+copying lib/iris/fileformats/pp.py -> build/lib/iris/fileformats
+
+copying lib/iris/fileformats/rules.py -> build/lib/iris/fileformats
+
+copying lib/iris/fileformats/um_cf_map.py -> build/lib/iris/fileformats
+
+creating build/lib/iris/io
+
+copying lib/iris/io/__init__.py -> build/lib/iris/io
+
+copying lib/iris/io/format_picker.py -> build/lib/iris/io
+
+creating build/lib/iris/tests
+
+copying lib/iris/tests/__init__.py -> build/lib/iris/tests
+
+copying lib/iris/tests/idiff.py -> build/lib/iris/tests
+
+copying lib/iris/tests/pp.py -> build/lib/iris/tests
+
+copying lib/iris/tests/stock.py -> build/lib/iris/tests
+
+copying lib/iris/tests/system_test.py -> build/lib/iris/tests
+
+copying lib/iris/tests/test_aggregate_by.py -> build/lib/iris/tests
+
+copying lib/iris/tests/test_analysis.py -> build/lib/iris/tests
+
+copying lib/iris/tests/test_analysis_calculus.py -> build/lib/iris/tests
+
+copying lib/iris/tests/test_basic_maths.py -> build/lib/iris/tests
+
+copying lib/iris/tests/test_cartography.py -> build/lib/iris/tests
+
+copying lib/iris/tests/test_cdm.py -> build/lib/iris/tests
+
+copying lib/iris/tests/test_cell.py -> build/lib/iris/tests
+
+copying lib/iris/tests/test_cf.py -> build/lib/iris/tests
+
+copying lib/iris/tests/test_constraints.py -> build/lib/iris/tests
+
+copying lib/iris/tests/test_coord_api.py -> build/lib/iris/tests
+
+copying lib/iris/tests/test_coord_categorisation.py -> build/lib/iris/tests
+
+copying lib/iris/tests/test_coordsystem.py -> build/lib/iris/tests
+
+copying lib/iris/tests/test_cube.py -> build/lib/iris/tests
+
+copying lib/iris/tests/test_cube_to_pp.py -> build/lib/iris/tests
+
+copying lib/iris/tests/test_ff.py -> build/lib/iris/tests
+
+copying lib/iris/tests/test_file_load.py -> build/lib/iris/tests
+
+copying lib/iris/tests/test_file_save.py -> build/lib/iris/tests
+
+copying lib/iris/tests/test_grib_load.py -> build/lib/iris/tests
+
+copying lib/iris/tests/test_grib_save.py -> build/lib/iris/tests
+
+copying lib/iris/tests/test_grib_save_rules.py -> build/lib/iris/tests
+
+copying lib/iris/tests/test_hybrid.py -> build/lib/iris/tests
+
+copying lib/iris/tests/test_interpolation.py -> build/lib/iris/tests
+
+copying lib/iris/tests/test_intersect.py -> build/lib/iris/tests
+
+copying lib/iris/tests/test_io_init.py -> build/lib/iris/tests
+
+copying lib/iris/tests/test_iterate.py -> build/lib/iris/tests
+
+copying lib/iris/tests/test_load.py -> build/lib/iris/tests
+
+copying lib/iris/tests/test_mapping.py -> build/lib/iris/tests
+
+copying lib/iris/tests/test_merge.py -> build/lib/iris/tests
+
+copying lib/iris/tests/test_netcdf.py -> build/lib/iris/tests
+
+copying lib/iris/tests/test_nimrod.py -> build/lib/iris/tests
+
+copying lib/iris/tests/test_pickling.py -> build/lib/iris/tests
+
+copying lib/iris/tests/test_plot.py -> build/lib/iris/tests
+
+copying lib/iris/tests/test_pp_cf.py -> build/lib/iris/tests
+
+copying lib/iris/tests/test_pp_module.py -> build/lib/iris/tests
+
+copying lib/iris/tests/test_pp_stash.py -> build/lib/iris/tests
+
+copying lib/iris/tests/test_pp_to_cube.py -> build/lib/iris/tests
+
+copying lib/iris/tests/test_quickplot.py -> build/lib/iris/tests
+
+copying lib/iris/tests/test_regrid.py -> build/lib/iris/tests
+
+copying lib/iris/tests/test_rules.py -> build/lib/iris/tests
+
+copying lib/iris/tests/test_std_names.py -> build/lib/iris/tests
+
+copying lib/iris/tests/test_trajectory.py -> build/lib/iris/tests
+
+copying lib/iris/tests/test_unit.py -> build/lib/iris/tests
+
+copying lib/iris/tests/test_uri_callback.py -> build/lib/iris/tests
+
+copying lib/iris/tests/test_util.py -> build/lib/iris/tests
+
+copying lib/iris/tests/test_verbose_logging.py -> build/lib/iris/tests
+
+creating build/lib/iris/fileformats/_pyke_rules
+
+copying lib/iris/fileformats/_pyke_rules/__init__.py -> build/lib/iris/fileformats/_pyke_rules
+
+creating build/lib/iris/etc
+
+copying lib/iris/etc/grib_cross_reference_rules.txt -> build/lib/iris/etc
+
+copying lib/iris/etc/grib_rules.txt -> build/lib/iris/etc
+
+copying lib/iris/etc/mosig_codes.txt -> build/lib/iris/etc
+
+copying lib/iris/etc/pp_cross_reference_rules.txt -> build/lib/iris/etc
+
+copying lib/iris/etc/pp_rules.txt -> build/lib/iris/etc
+
+copying lib/iris/etc/pp_save_rules.txt -> build/lib/iris/etc
+
+creating build/lib/iris/etc/palette
+
+creating build/lib/iris/etc/palette/diverging
+
+copying lib/iris/etc/palette/diverging/BrBG_11.txt -> build/lib/iris/etc/palette/diverging
+
+copying lib/iris/etc/palette/diverging/PRGn_11.txt -> build/lib/iris/etc/palette/diverging
+
+copying lib/iris/etc/palette/diverging/PiYG_11.txt -> build/lib/iris/etc/palette/diverging
+
+copying lib/iris/etc/palette/diverging/PuOr_11.txt -> build/lib/iris/etc/palette/diverging
+
+copying lib/iris/etc/palette/diverging/RdBu_11.txt -> build/lib/iris/etc/palette/diverging
+
+copying lib/iris/etc/palette/diverging/RdGy_11.txt -> build/lib/iris/etc/palette/diverging
+
+copying lib/iris/etc/palette/diverging/RdYlBu_11.txt -> build/lib/iris/etc/palette/diverging
+
+copying lib/iris/etc/palette/diverging/RdYlGn_11.txt -> build/lib/iris/etc/palette/diverging
+
+copying lib/iris/etc/palette/diverging/Spectral_11.txt -> build/lib/iris/etc/palette/diverging
+
+creating build/lib/iris/etc/palette/qualitative
+
+copying lib/iris/etc/palette/qualitative/Accent_08.txt -> build/lib/iris/etc/palette/qualitative
+
+copying lib/iris/etc/palette/qualitative/Dark2_08.txt -> build/lib/iris/etc/palette/qualitative
+
+copying lib/iris/etc/palette/qualitative/Paired_12.txt -> build/lib/iris/etc/palette/qualitative
+
+copying lib/iris/etc/palette/qualitative/Pastel1_09.txt -> build/lib/iris/etc/palette/qualitative
+
+copying lib/iris/etc/palette/qualitative/Pastel2_08.txt -> build/lib/iris/etc/palette/qualitative
+
+copying lib/iris/etc/palette/qualitative/Set1_09.txt -> build/lib/iris/etc/palette/qualitative
+
+copying lib/iris/etc/palette/qualitative/Set2_08.txt -> build/lib/iris/etc/palette/qualitative
+
+copying lib/iris/etc/palette/qualitative/Set3_12.txt -> build/lib/iris/etc/palette/qualitative
+
+creating build/lib/iris/etc/palette/sequential
+
+copying lib/iris/etc/palette/sequential/Blues_09.txt -> build/lib/iris/etc/palette/sequential
+
+copying lib/iris/etc/palette/sequential/BuGn_09.txt -> build/lib/iris/etc/palette/sequential
+
+copying lib/iris/etc/palette/sequential/BuPu_09.txt -> build/lib/iris/etc/palette/sequential
+
+copying lib/iris/etc/palette/sequential/GnBu_09.txt -> build/lib/iris/etc/palette/sequential
+
+copying lib/iris/etc/palette/sequential/Greens_09.txt -> build/lib/iris/etc/palette/sequential
+
+copying lib/iris/etc/palette/sequential/Greys_09.txt -> build/lib/iris/etc/palette/sequential
+
+copying lib/iris/etc/palette/sequential/OrRd_09.txt -> build/lib/iris/etc/palette/sequential
+
+copying lib/iris/etc/palette/sequential/Oranges_09.txt -> build/lib/iris/etc/palette/sequential
+
+copying lib/iris/etc/palette/sequential/PuBuGn_09.txt -> build/lib/iris/etc/palette/sequential
+
+copying lib/iris/etc/palette/sequential/PuBu_09.txt -> build/lib/iris/etc/palette/sequential
+
+copying lib/iris/etc/palette/sequential/PuRd_09.txt -> build/lib/iris/etc/palette/sequential
+
+copying lib/iris/etc/palette/sequential/Purples_09.txt -> build/lib/iris/etc/palette/sequential
+
+copying lib/iris/etc/palette/sequential/RdPu_09.txt -> build/lib/iris/etc/palette/sequential
+
+copying lib/iris/etc/palette/sequential/Reds_09.txt -> build/lib/iris/etc/palette/sequential
+
+copying lib/iris/etc/palette/sequential/YlGnBu_09.txt -> build/lib/iris/etc/palette/sequential
+
+copying lib/iris/etc/palette/sequential/YlGn_09.txt -> build/lib/iris/etc/palette/sequential
+
+copying lib/iris/etc/palette/sequential/YlOrBr_09.txt -> build/lib/iris/etc/palette/sequential
+
+copying lib/iris/etc/palette/sequential/YlOrRd_09.txt -> build/lib/iris/etc/palette/sequential
+
+creating build/lib/iris/tests/results
+
+creating build/lib/iris/tests/results/COLPEX
+
+copying lib/iris/tests/results/COLPEX/small_colpex_theta_p_alt.cml -> build/lib/iris/tests/results/COLPEX
+
+creating build/lib/iris/tests/results/FF
+
+copying lib/iris/tests/results/FF/air_temperature_1.cml -> build/lib/iris/tests/results/FF
+
+copying lib/iris/tests/results/FF/air_temperature_2.cml -> build/lib/iris/tests/results/FF
+
+copying lib/iris/tests/results/FF/soil_temperature_1.cml -> build/lib/iris/tests/results/FF
+
+copying lib/iris/tests/results/FF/surface_altitude_1.cml -> build/lib/iris/tests/results/FF
+
+creating build/lib/iris/tests/results/PP
+
+copying lib/iris/tests/results/PP/extra_char_data.pp.txt -> build/lib/iris/tests/results/PP
+
+copying lib/iris/tests/results/PP/extra_char_data.w_data_loaded.pp.txt -> build/lib/iris/tests/results/PP
+
+copying lib/iris/tests/results/PP/extra_data_time_series.pp.txt -> build/lib/iris/tests/results/PP
+
+copying lib/iris/tests/results/PP/extra_x_data.pp.txt -> build/lib/iris/tests/results/PP
+
+copying lib/iris/tests/results/PP/global_test.pp.txt -> build/lib/iris/tests/results/PP
+
+copying lib/iris/tests/results/PP/nae_unpacked.pp.txt -> build/lib/iris/tests/results/PP
+
+copying lib/iris/tests/results/PP/rle_unpacked.pp.txt -> build/lib/iris/tests/results/PP
+
+creating build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/abs.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/addition.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/addition_coord_x.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/addition_coord_y.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/addition_different_std_name.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/addition_in_place.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/addition_in_place_coord.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/addition_scalar.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/areaweights_original.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/count_bar_2d.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/count_foo_1d.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/count_foo_2d.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/count_foo_bar_2d.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/division.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/division_by_array.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/division_by_latitude.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/division_by_longitude.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/division_by_singular_coord.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/division_scalar.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/exponentiate.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/first_quartile_foo_1d.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/first_quartile_foo_2d.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/first_quartile_foo_bar_2d.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/gmean_latitude.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/gmean_latitude_longitude.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/gmean_latitude_longitude_1call.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/hmean_latitude.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/hmean_latitude_longitude.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/hmean_latitude_longitude_1call.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/log.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/log10.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/log2.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/maths_original.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/max_latitude.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/max_latitude_longitude.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/max_latitude_longitude_1call.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/mean_latitude.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/mean_latitude_longitude.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/mean_latitude_longitude_1call.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/median_latitude.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/median_latitude_longitude.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/median_latitude_longitude_1call.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/min_latitude.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/min_latitude_longitude.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/min_latitude_longitude_1call.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/multiply.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/multiply_different_std_name.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/original.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/original_common.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/original_hmean.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/proportion_bar_2d.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/proportion_foo_1d.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/proportion_foo_2d.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/proportion_foo_2d_masked.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/proportion_foo_bar_2d.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/rms_latitude.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/rms_latitude_longitude.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/rms_latitude_longitude_1call.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/sqrt.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/std_dev_latitude.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/std_dev_latitude_longitude.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/std_dev_latitude_longitude_1call.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/subtract.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/subtract_array.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/subtract_coord_x.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/subtract_coord_y.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/subtract_scalar.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/sum_latitude.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/sum_latitude_longitude.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/sum_latitude_longitude_1call.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/third_quartile_foo_1d.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/variance_latitude.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/variance_latitude_longitude.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/variance_latitude_longitude_1call.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/weighted_mean_lat.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/weighted_mean_latlon.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/weighted_mean_lon.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/weighted_mean_original.cml -> build/lib/iris/tests/results/analysis
+
+copying lib/iris/tests/results/analysis/weighted_mean_source.cml -> build/lib/iris/tests/results/analysis
+
+creating build/lib/iris/tests/results/analysis/aggregated_by
+
+copying lib/iris/tests/results/analysis/aggregated_by/easy.cml -> build/lib/iris/tests/results/analysis/aggregated_by
+
+copying lib/iris/tests/results/analysis/aggregated_by/multi.cml -> build/lib/iris/tests/results/analysis/aggregated_by
+
+copying lib/iris/tests/results/analysis/aggregated_by/multi_shared.cml -> build/lib/iris/tests/results/analysis/aggregated_by
+
+copying lib/iris/tests/results/analysis/aggregated_by/single.cml -> build/lib/iris/tests/results/analysis/aggregated_by
+
+copying lib/iris/tests/results/analysis/aggregated_by/single_rms.cml -> build/lib/iris/tests/results/analysis/aggregated_by
+
+copying lib/iris/tests/results/analysis/aggregated_by/single_shared.cml -> build/lib/iris/tests/results/analysis/aggregated_by
+
+creating build/lib/iris/tests/results/analysis/calculus
+
+copying lib/iris/tests/results/analysis/calculus/cos_simple.xml -> build/lib/iris/tests/results/analysis/calculus
+
+copying lib/iris/tests/results/analysis/calculus/cos_simple_radians.xml -> build/lib/iris/tests/results/analysis/calculus
+
+copying lib/iris/tests/results/analysis/calculus/curl_contrived_cartesian2.cml -> build/lib/iris/tests/results/analysis/calculus
+
+copying lib/iris/tests/results/analysis/calculus/delta_handmade_simple_wrt_x.cml -> build/lib/iris/tests/results/analysis/calculus
+
+copying lib/iris/tests/results/analysis/calculus/delta_handmade_wrt_lat.cml -> build/lib/iris/tests/results/analysis/calculus
+
+copying lib/iris/tests/results/analysis/calculus/delta_handmade_wrt_lon.cml -> build/lib/iris/tests/results/analysis/calculus
+
+copying lib/iris/tests/results/analysis/calculus/delta_handmade_wrt_x.cml -> build/lib/iris/tests/results/analysis/calculus
+
+copying lib/iris/tests/results/analysis/calculus/delta_handmade_wrt_y.cml -> build/lib/iris/tests/results/analysis/calculus
+
+copying lib/iris/tests/results/analysis/calculus/grad_contrived1.cml -> build/lib/iris/tests/results/analysis/calculus
+
+copying lib/iris/tests/results/analysis/calculus/grad_contrived2.cml -> build/lib/iris/tests/results/analysis/calculus
+
+copying lib/iris/tests/results/analysis/calculus/grad_contrived_non_spherical1.cml -> build/lib/iris/tests/results/analysis/calculus
+
+copying lib/iris/tests/results/analysis/calculus/handmade2_wrt_lat.cml -> build/lib/iris/tests/results/analysis/calculus
+
+copying lib/iris/tests/results/analysis/calculus/handmade2_wrt_lon.cml -> build/lib/iris/tests/results/analysis/calculus
+
+copying lib/iris/tests/results/analysis/calculus/handmade_simple_wrt_x.cml -> build/lib/iris/tests/results/analysis/calculus
+
+copying lib/iris/tests/results/analysis/calculus/handmade_wrt_lat.cml -> build/lib/iris/tests/results/analysis/calculus
+
+copying lib/iris/tests/results/analysis/calculus/handmade_wrt_lon.cml -> build/lib/iris/tests/results/analysis/calculus
+
+copying lib/iris/tests/results/analysis/calculus/handmade_wrt_x.cml -> build/lib/iris/tests/results/analysis/calculus
+
+copying lib/iris/tests/results/analysis/calculus/handmade_wrt_y.cml -> build/lib/iris/tests/results/analysis/calculus
+
+creating build/lib/iris/tests/results/analysis/coord_comparison
+
+copying lib/iris/tests/results/analysis/coord_comparison/cube1_cube1.txt -> build/lib/iris/tests/results/analysis/coord_comparison
+
+copying lib/iris/tests/results/analysis/coord_comparison/cube1_cube1_cube1.txt -> build/lib/iris/tests/results/analysis/coord_comparison
+
+copying lib/iris/tests/results/analysis/coord_comparison/cube1_cube2.txt -> build/lib/iris/tests/results/analysis/coord_comparison
+
+copying lib/iris/tests/results/analysis/coord_comparison/cube1_cube2_cube1.txt -> build/lib/iris/tests/results/analysis/coord_comparison
+
+copying lib/iris/tests/results/analysis/coord_comparison/cube1_cube3.txt -> build/lib/iris/tests/results/analysis/coord_comparison
+
+copying lib/iris/tests/results/analysis/coord_comparison/cube1_cube4.txt -> build/lib/iris/tests/results/analysis/coord_comparison
+
+copying lib/iris/tests/results/analysis/coord_comparison/cube2_cube3.txt -> build/lib/iris/tests/results/analysis/coord_comparison
+
+copying lib/iris/tests/results/analysis/coord_comparison/cube2_cube4.txt -> build/lib/iris/tests/results/analysis/coord_comparison
+
+copying lib/iris/tests/results/analysis/coord_comparison/cube3_cube4.txt -> build/lib/iris/tests/results/analysis/coord_comparison
+
+creating build/lib/iris/tests/results/analysis/delta_and_midpoint
+
+copying lib/iris/tests/results/analysis/delta_and_midpoint/delta_one_element_explicit.xml -> build/lib/iris/tests/results/analysis/delta_and_midpoint
+
+copying lib/iris/tests/results/analysis/delta_and_midpoint/midpoint_one_element_explicit.xml -> build/lib/iris/tests/results/analysis/delta_and_midpoint
+
+copying lib/iris/tests/results/analysis/delta_and_midpoint/simple1.cml -> build/lib/iris/tests/results/analysis/delta_and_midpoint
+
+copying lib/iris/tests/results/analysis/delta_and_midpoint/simple1_delta.cml -> build/lib/iris/tests/results/analysis/delta_and_midpoint
+
+copying lib/iris/tests/results/analysis/delta_and_midpoint/simple1_midpoint.cml -> build/lib/iris/tests/results/analysis/delta_and_midpoint
+
+copying lib/iris/tests/results/analysis/delta_and_midpoint/simple2.cml -> build/lib/iris/tests/results/analysis/delta_and_midpoint
+
+copying lib/iris/tests/results/analysis/delta_and_midpoint/simple2_delta.cml -> build/lib/iris/tests/results/analysis/delta_and_midpoint
+
+copying lib/iris/tests/results/analysis/delta_and_midpoint/simple2_midpoint.cml -> build/lib/iris/tests/results/analysis/delta_and_midpoint
+
+copying lib/iris/tests/results/analysis/delta_and_midpoint/simple3.cml -> build/lib/iris/tests/results/analysis/delta_and_midpoint
+
+copying lib/iris/tests/results/analysis/delta_and_midpoint/simple3_delta.cml -> build/lib/iris/tests/results/analysis/delta_and_midpoint
+
+copying lib/iris/tests/results/analysis/delta_and_midpoint/simple3_midpoint.cml -> build/lib/iris/tests/results/analysis/delta_and_midpoint
+
+copying lib/iris/tests/results/analysis/delta_and_midpoint/simple4.cml -> build/lib/iris/tests/results/analysis/delta_and_midpoint
+
+copying lib/iris/tests/results/analysis/delta_and_midpoint/simple4_delta.cml -> build/lib/iris/tests/results/analysis/delta_and_midpoint
+
+copying lib/iris/tests/results/analysis/delta_and_midpoint/simple4_midpoint.cml -> build/lib/iris/tests/results/analysis/delta_and_midpoint
+
+copying lib/iris/tests/results/analysis/delta_and_midpoint/simple5.cml -> build/lib/iris/tests/results/analysis/delta_and_midpoint
+
+copying lib/iris/tests/results/analysis/delta_and_midpoint/simple5_delta.cml -> build/lib/iris/tests/results/analysis/delta_and_midpoint
+
+copying lib/iris/tests/results/analysis/delta_and_midpoint/simple5_midpoint.cml -> build/lib/iris/tests/results/analysis/delta_and_midpoint
+
+copying lib/iris/tests/results/analysis/delta_and_midpoint/simple6.cml -> build/lib/iris/tests/results/analysis/delta_and_midpoint
+
+creating build/lib/iris/tests/results/analysis/interpolation
+
+copying lib/iris/tests/results/analysis/interpolation/nearest_neighbour_extract_bounded.cml -> build/lib/iris/tests/results/analysis/interpolation
+
+copying lib/iris/tests/results/analysis/interpolation/nearest_neighbour_extract_bounded_mid_point.cml -> build/lib/iris/tests/results/analysis/interpolation
+
+copying lib/iris/tests/results/analysis/interpolation/nearest_neighbour_extract_latitude.cml -> build/lib/iris/tests/results/analysis/interpolation
+
+copying lib/iris/tests/results/analysis/interpolation/nearest_neighbour_extract_latitude_longitude.cml -> build/lib/iris/tests/results/analysis/interpolation
+
+creating build/lib/iris/tests/results/analysis/interpolation/linear
+
+copying lib/iris/tests/results/analysis/interpolation/linear/circular_vs_non_circular.cml -> build/lib/iris/tests/results/analysis/interpolation/linear
+
+copying lib/iris/tests/results/analysis/interpolation/linear/dim_to_aux.cml -> build/lib/iris/tests/results/analysis/interpolation/linear
+
+copying lib/iris/tests/results/analysis/interpolation/linear/real_2dslice.cml -> build/lib/iris/tests/results/analysis/interpolation/linear
+
+copying lib/iris/tests/results/analysis/interpolation/linear/real_2slices.cml -> build/lib/iris/tests/results/analysis/interpolation/linear
+
+copying lib/iris/tests/results/analysis/interpolation/linear/real_circular_2dslice.cml -> build/lib/iris/tests/results/analysis/interpolation/linear
+
+copying lib/iris/tests/results/analysis/interpolation/linear/simple_casting_datatype.cml -> build/lib/iris/tests/results/analysis/interpolation/linear
+
+copying lib/iris/tests/results/analysis/interpolation/linear/simple_coord_linear_extrapolation.cml -> build/lib/iris/tests/results/analysis/interpolation/linear
+
+copying lib/iris/tests/results/analysis/interpolation/linear/simple_coord_linear_extrapolation_multipoint1.cml -> build/lib/iris/tests/results/analysis/interpolation/linear
+
+copying lib/iris/tests/results/analysis/interpolation/linear/simple_coord_linear_extrapolation_multipoint2.cml -> build/lib/iris/tests/results/analysis/interpolation/linear
+
+copying lib/iris/tests/results/analysis/interpolation/linear/simple_coord_nan_extrapolation.cml -> build/lib/iris/tests/results/analysis/interpolation/linear
+
+copying lib/iris/tests/results/analysis/interpolation/linear/simple_multiple_coords.cml -> build/lib/iris/tests/results/analysis/interpolation/linear
+
+copying lib/iris/tests/results/analysis/interpolation/linear/simple_multiple_coords_extrapolation.cml -> build/lib/iris/tests/results/analysis/interpolation/linear
+
+copying lib/iris/tests/results/analysis/interpolation/linear/simple_multiple_points.cml -> build/lib/iris/tests/results/analysis/interpolation/linear
+
+copying lib/iris/tests/results/analysis/interpolation/linear/simple_multiple_points_circular.cml -> build/lib/iris/tests/results/analysis/interpolation/linear
+
+copying lib/iris/tests/results/analysis/interpolation/linear/simple_shared_axis.cml -> build/lib/iris/tests/results/analysis/interpolation/linear
+
+copying lib/iris/tests/results/analysis/interpolation/linear/simple_single_point.cml -> build/lib/iris/tests/results/analysis/interpolation/linear
+
+creating build/lib/iris/tests/results/analysis/project
+
+copying lib/iris/tests/results/analysis/project/default_source_cs.cml -> build/lib/iris/tests/results/analysis/project
+
+creating build/lib/iris/tests/results/analysis/rolling_window
+
+copying lib/iris/tests/results/analysis/rolling_window/simple_latitude.cml -> build/lib/iris/tests/results/analysis/rolling_window
+
+copying lib/iris/tests/results/analysis/rolling_window/simple_longitude.cml -> build/lib/iris/tests/results/analysis/rolling_window
+
+copying lib/iris/tests/results/analysis/rolling_window/size_4_longitude.cml -> build/lib/iris/tests/results/analysis/rolling_window
+
+creating build/lib/iris/tests/results/cartography
+
+creating build/lib/iris/tests/results/cartography/get_xy_grids
+
+copying lib/iris/tests/results/cartography/get_xy_grids/1d.txt -> build/lib/iris/tests/results/cartography/get_xy_grids
+
+copying lib/iris/tests/results/cartography/get_xy_grids/2d.txt -> build/lib/iris/tests/results/cartography/get_xy_grids
+
+creating build/lib/iris/tests/results/categorisation
+
+copying lib/iris/tests/results/categorisation/quickcheck.cml -> build/lib/iris/tests/results/categorisation
+
+creating build/lib/iris/tests/results/cdm
+
+copying lib/iris/tests/results/cdm/masked_cube.cml -> build/lib/iris/tests/results/cdm
+
+copying lib/iris/tests/results/cdm/masked_save_pp.txt -> build/lib/iris/tests/results/cdm
+
+copying lib/iris/tests/results/cdm/test_simple_cube_intersection.cml -> build/lib/iris/tests/results/cdm
+
+creating build/lib/iris/tests/results/cdm/extract
+
+copying lib/iris/tests/results/cdm/extract/lat_eq_10.cml -> build/lib/iris/tests/results/cdm/extract
+
+copying lib/iris/tests/results/cdm/extract/lat_gt_10.cml -> build/lib/iris/tests/results/cdm/extract
+
+copying lib/iris/tests/results/cdm/extract/lat_gt_10_and_lon_ge_10.cml -> build/lib/iris/tests/results/cdm/extract
+
+creating build/lib/iris/tests/results/cdm/str_repr
+
+copying lib/iris/tests/results/cdm/str_repr/0d_cube.__repr__.txt -> build/lib/iris/tests/results/cdm/str_repr
+
+copying lib/iris/tests/results/cdm/str_repr/0d_cube.__str__.txt -> build/lib/iris/tests/results/cdm/str_repr
+
+copying lib/iris/tests/results/cdm/str_repr/cell_methods.__str__.txt -> build/lib/iris/tests/results/cdm/str_repr
+
+copying lib/iris/tests/results/cdm/str_repr/cubelist.__repr__.txt -> build/lib/iris/tests/results/cdm/str_repr
+
+copying lib/iris/tests/results/cdm/str_repr/cubelist.__str__.txt -> build/lib/iris/tests/results/cdm/str_repr
+
+copying lib/iris/tests/results/cdm/str_repr/muliple_history.__str__.txt -> build/lib/iris/tests/results/cdm/str_repr
+
+copying lib/iris/tests/results/cdm/str_repr/multi_dim_coord.__repr__.txt -> build/lib/iris/tests/results/cdm/str_repr
+
+copying lib/iris/tests/results/cdm/str_repr/multi_dim_coord.__str__.txt -> build/lib/iris/tests/results/cdm/str_repr
+
+copying lib/iris/tests/results/cdm/str_repr/realistic_0d.repr.txt -> build/lib/iris/tests/results/cdm/str_repr
+
+copying lib/iris/tests/results/cdm/str_repr/realistic_0d.str.txt -> build/lib/iris/tests/results/cdm/str_repr
+
+copying lib/iris/tests/results/cdm/str_repr/realistic_1d.repr.txt -> build/lib/iris/tests/results/cdm/str_repr
+
+copying lib/iris/tests/results/cdm/str_repr/realistic_1d.str.txt -> build/lib/iris/tests/results/cdm/str_repr
+
+copying lib/iris/tests/results/cdm/str_repr/realistic_2d.repr.txt -> build/lib/iris/tests/results/cdm/str_repr
+
+copying lib/iris/tests/results/cdm/str_repr/realistic_2d.str.txt -> build/lib/iris/tests/results/cdm/str_repr
+
+copying lib/iris/tests/results/cdm/str_repr/realistic_3d.repr.txt -> build/lib/iris/tests/results/cdm/str_repr
+
+copying lib/iris/tests/results/cdm/str_repr/realistic_3d.str.txt -> build/lib/iris/tests/results/cdm/str_repr
+
+copying lib/iris/tests/results/cdm/str_repr/realistic_4d.repr.txt -> build/lib/iris/tests/results/cdm/str_repr
+
+copying lib/iris/tests/results/cdm/str_repr/realistic_4d.str.txt -> build/lib/iris/tests/results/cdm/str_repr
+
+copying lib/iris/tests/results/cdm/str_repr/similar.__str__.txt -> build/lib/iris/tests/results/cdm/str_repr
+
+copying lib/iris/tests/results/cdm/str_repr/simple.__str__.txt -> build/lib/iris/tests/results/cdm/str_repr
+
+creating build/lib/iris/tests/results/constrained_load
+
+copying lib/iris/tests/results/constrained_load/all_10_load_match.cml -> build/lib/iris/tests/results/constrained_load
+
+copying lib/iris/tests/results/constrained_load/all_ml_10_22_load_match.cml -> build/lib/iris/tests/results/constrained_load
+
+copying lib/iris/tests/results/constrained_load/attribute_constraint.cml -> build/lib/iris/tests/results/constrained_load
+
+copying lib/iris/tests/results/constrained_load/invalid_inequality_load_match.cml -> build/lib/iris/tests/results/constrained_load
+
+copying lib/iris/tests/results/constrained_load/pressure_950_load_match.cml -> build/lib/iris/tests/results/constrained_load
+
+copying lib/iris/tests/results/constrained_load/theta_10_and_theta_level_gt_30_le_3_load_match.cml -> build/lib/iris/tests/results/constrained_load
+
+copying lib/iris/tests/results/constrained_load/theta_10_and_theta_level_gt_30_le_3_load_strict.cml -> build/lib/iris/tests/results/constrained_load
+
+copying lib/iris/tests/results/constrained_load/theta_10_load_match.cml -> build/lib/iris/tests/results/constrained_load
+
+copying lib/iris/tests/results/constrained_load/theta_10_load_strict.cml -> build/lib/iris/tests/results/constrained_load
+
+copying lib/iris/tests/results/constrained_load/theta_and_all_10_load_match.cml -> build/lib/iris/tests/results/constrained_load
+
+copying lib/iris/tests/results/constrained_load/theta_and_theta_10_load_strict.cml -> build/lib/iris/tests/results/constrained_load
+
+copying lib/iris/tests/results/constrained_load/theta_and_theta_load_match.cml -> build/lib/iris/tests/results/constrained_load
+
+copying lib/iris/tests/results/constrained_load/theta_and_theta_load_strict.cml -> build/lib/iris/tests/results/constrained_load
+
+copying lib/iris/tests/results/constrained_load/theta_gt_30_le_3_load_match.cml -> build/lib/iris/tests/results/constrained_load
+
+copying lib/iris/tests/results/constrained_load/theta_gt_30_le_3_load_strict.cml -> build/lib/iris/tests/results/constrained_load
+
+copying lib/iris/tests/results/constrained_load/theta_lat_30_load_match.cml -> build/lib/iris/tests/results/constrained_load
+
+copying lib/iris/tests/results/constrained_load/theta_lat_30_load_strict.cml -> build/lib/iris/tests/results/constrained_load
+
+copying lib/iris/tests/results/constrained_load/theta_lat_gt_30_load_match.cml -> build/lib/iris/tests/results/constrained_load
+
+copying lib/iris/tests/results/constrained_load/theta_lat_gt_30_load_strict.cml -> build/lib/iris/tests/results/constrained_load
+
+copying lib/iris/tests/results/constrained_load/theta_load_match.cml -> build/lib/iris/tests/results/constrained_load
+
+copying lib/iris/tests/results/constrained_load/theta_load_strict.cml -> build/lib/iris/tests/results/constrained_load
+
+creating build/lib/iris/tests/results/coord_api
+
+copying lib/iris/tests/results/coord_api/complex.xml -> build/lib/iris/tests/results/coord_api
+
+copying lib/iris/tests/results/coord_api/intersection.xml -> build/lib/iris/tests/results/coord_api
+
+copying lib/iris/tests/results/coord_api/intersection_missing.xml -> build/lib/iris/tests/results/coord_api
+
+copying lib/iris/tests/results/coord_api/intersection_reversed.xml -> build/lib/iris/tests/results/coord_api
+
+copying lib/iris/tests/results/coord_api/minimal.xml -> build/lib/iris/tests/results/coord_api
+
+copying lib/iris/tests/results/coord_api/nd_bounds.cml -> build/lib/iris/tests/results/coord_api
+
+creating build/lib/iris/tests/results/coord_api/coord_maths
+
+copying lib/iris/tests/results/coord_api/coord_maths/add_float_expl.xml -> build/lib/iris/tests/results/coord_api/coord_maths
+
+copying lib/iris/tests/results/coord_api/coord_maths/add_simple_expl.xml -> build/lib/iris/tests/results/coord_api/coord_maths
+
+copying lib/iris/tests/results/coord_api/coord_maths/cos_simple.xml -> build/lib/iris/tests/results/coord_api/coord_maths
+
+copying lib/iris/tests/results/coord_api/coord_maths/cos_simple_radians.xml -> build/lib/iris/tests/results/coord_api/coord_maths
+
+copying lib/iris/tests/results/coord_api/coord_maths/divide_simple_expl.xml -> build/lib/iris/tests/results/coord_api/coord_maths
+
+copying lib/iris/tests/results/coord_api/coord_maths/mult_float_expl.xml -> build/lib/iris/tests/results/coord_api/coord_maths
+
+copying lib/iris/tests/results/coord_api/coord_maths/multiply_simple_expl.xml -> build/lib/iris/tests/results/coord_api/coord_maths
+
+copying lib/iris/tests/results/coord_api/coord_maths/negate_expl.xml -> build/lib/iris/tests/results/coord_api/coord_maths
+
+copying lib/iris/tests/results/coord_api/coord_maths/r_subtract_simple_exl.xml -> build/lib/iris/tests/results/coord_api/coord_maths
+
+copying lib/iris/tests/results/coord_api/coord_maths/right_divide_simple_expl.xml -> build/lib/iris/tests/results/coord_api/coord_maths
+
+copying lib/iris/tests/results/coord_api/coord_maths/subtract_simple_expl.xml -> build/lib/iris/tests/results/coord_api/coord_maths
+
+creating build/lib/iris/tests/results/coord_systems
+
+copying lib/iris/tests/results/coord_systems/CoordSystem_xml_element.xml -> build/lib/iris/tests/results/coord_systems
+
+copying lib/iris/tests/results/coord_systems/GeogCS_init_no_invf.xml -> build/lib/iris/tests/results/coord_systems
+
+copying lib/iris/tests/results/coord_systems/GeogCS_init_no_major.xml -> build/lib/iris/tests/results/coord_systems
+
+copying lib/iris/tests/results/coord_systems/GeogCS_init_no_minor.xml -> build/lib/iris/tests/results/coord_systems
+
+copying lib/iris/tests/results/coord_systems/GeogCS_init_sphere.xml -> build/lib/iris/tests/results/coord_systems
+
+copying lib/iris/tests/results/coord_systems/RotatedGeogCS_init.xml -> build/lib/iris/tests/results/coord_systems
+
+copying lib/iris/tests/results/coord_systems/RotatedGeogCS_init_a.xml -> build/lib/iris/tests/results/coord_systems
+
+copying lib/iris/tests/results/coord_systems/RotatedGeogCS_init_b.xml -> build/lib/iris/tests/results/coord_systems
+
+copying lib/iris/tests/results/coord_systems/TransverseMercator_osgb.xml -> build/lib/iris/tests/results/coord_systems
+
+creating build/lib/iris/tests/results/cube_collapsed
+
+copying lib/iris/tests/results/cube_collapsed/latitude_longitude_dual_stage.cml -> build/lib/iris/tests/results/cube_collapsed
+
+copying lib/iris/tests/results/cube_collapsed/latitude_longitude_single_stage.cml -> build/lib/iris/tests/results/cube_collapsed
+
+copying lib/iris/tests/results/cube_collapsed/latitude_model_level_number_dual_stage.cml -> build/lib/iris/tests/results/cube_collapsed
+
+copying lib/iris/tests/results/cube_collapsed/latitude_model_level_number_single_stage.cml -> build/lib/iris/tests/results/cube_collapsed
+
+copying lib/iris/tests/results/cube_collapsed/latitude_time_dual_stage.cml -> build/lib/iris/tests/results/cube_collapsed
+
+copying lib/iris/tests/results/cube_collapsed/latitude_time_single_stage.cml -> build/lib/iris/tests/results/cube_collapsed
+
+copying lib/iris/tests/results/cube_collapsed/longitude_latitude_dual_stage.cml -> build/lib/iris/tests/results/cube_collapsed
+
+copying lib/iris/tests/results/cube_collapsed/longitude_latitude_single_stage.cml -> build/lib/iris/tests/results/cube_collapsed
+
+copying lib/iris/tests/results/cube_collapsed/longitude_model_level_number_dual_stage.cml -> build/lib/iris/tests/results/cube_collapsed
+
+copying lib/iris/tests/results/cube_collapsed/longitude_model_level_number_single_stage.cml -> build/lib/iris/tests/results/cube_collapsed
+
+copying lib/iris/tests/results/cube_collapsed/longitude_time_dual_stage.cml -> build/lib/iris/tests/results/cube_collapsed
+
+copying lib/iris/tests/results/cube_collapsed/longitude_time_single_stage.cml -> build/lib/iris/tests/results/cube_collapsed
+
+copying lib/iris/tests/results/cube_collapsed/model_level_number_latitude_dual_stage.cml -> build/lib/iris/tests/results/cube_collapsed
+
+copying lib/iris/tests/results/cube_collapsed/model_level_number_latitude_single_stage.cml -> build/lib/iris/tests/results/cube_collapsed
+
+copying lib/iris/tests/results/cube_collapsed/model_level_number_longitude_dual_stage.cml -> build/lib/iris/tests/results/cube_collapsed
+
+copying lib/iris/tests/results/cube_collapsed/model_level_number_longitude_single_stage.cml -> build/lib/iris/tests/results/cube_collapsed
+
+copying lib/iris/tests/results/cube_collapsed/model_level_number_time_dual_stage.cml -> build/lib/iris/tests/results/cube_collapsed
+
+copying lib/iris/tests/results/cube_collapsed/model_level_number_time_single_stage.cml -> build/lib/iris/tests/results/cube_collapsed
+
+copying lib/iris/tests/results/cube_collapsed/original.cml -> build/lib/iris/tests/results/cube_collapsed
+
+copying lib/iris/tests/results/cube_collapsed/time_latitude_dual_stage.cml -> build/lib/iris/tests/results/cube_collapsed
+
+copying lib/iris/tests/results/cube_collapsed/time_latitude_single_stage.cml -> build/lib/iris/tests/results/cube_collapsed
+
+copying lib/iris/tests/results/cube_collapsed/time_longitude_dual_stage.cml -> build/lib/iris/tests/results/cube_collapsed
+
+copying lib/iris/tests/results/cube_collapsed/time_longitude_single_stage.cml -> build/lib/iris/tests/results/cube_collapsed
+
+copying lib/iris/tests/results/cube_collapsed/time_model_level_number_dual_stage.cml -> build/lib/iris/tests/results/cube_collapsed
+
+copying lib/iris/tests/results/cube_collapsed/time_model_level_number_single_stage.cml -> build/lib/iris/tests/results/cube_collapsed
+
+copying lib/iris/tests/results/cube_collapsed/triple_collapse_lat_ml_pt.cml -> build/lib/iris/tests/results/cube_collapsed
+
+copying lib/iris/tests/results/cube_collapsed/triple_collapse_ml_pt_lon.cml -> build/lib/iris/tests/results/cube_collapsed
+
+creating build/lib/iris/tests/results/cube_io
+
+creating build/lib/iris/tests/results/cube_io/pickling
+
+copying lib/iris/tests/results/cube_io/pickling/cubelist.cml -> build/lib/iris/tests/results/cube_io/pickling
+
+copying lib/iris/tests/results/cube_io/pickling/single_cube.cml -> build/lib/iris/tests/results/cube_io/pickling
+
+copying lib/iris/tests/results/cube_io/pickling/theta.cml -> build/lib/iris/tests/results/cube_io/pickling
+
+creating build/lib/iris/tests/results/cube_io/pp
+
+copying lib/iris/tests/results/cube_io/pp/no_std_name.cml -> build/lib/iris/tests/results/cube_io/pp
+
+creating build/lib/iris/tests/results/cube_io/pp/load
+
+copying lib/iris/tests/results/cube_io/pp/load/global.cml -> build/lib/iris/tests/results/cube_io/pp/load
+
+creating build/lib/iris/tests/results/cube_merge
+
+copying lib/iris/tests/results/cube_merge/multidim_coord_merge.cml -> build/lib/iris/tests/results/cube_merge
+
+copying lib/iris/tests/results/cube_merge/multidim_coord_merge_transpose.cml -> build/lib/iris/tests/results/cube_merge
+
+copying lib/iris/tests/results/cube_merge/test_orig_point_cube.cml -> build/lib/iris/tests/results/cube_merge
+
+copying lib/iris/tests/results/cube_merge/test_simple_attributes1.cml -> build/lib/iris/tests/results/cube_merge
+
+copying lib/iris/tests/results/cube_merge/test_simple_attributes2.cml -> build/lib/iris/tests/results/cube_merge
+
+copying lib/iris/tests/results/cube_merge/test_simple_attributes3.cml -> build/lib/iris/tests/results/cube_merge
+
+copying lib/iris/tests/results/cube_merge/test_simple_bound_merge.cml -> build/lib/iris/tests/results/cube_merge
+
+copying lib/iris/tests/results/cube_merge/test_simple_merge.cml -> build/lib/iris/tests/results/cube_merge
+
+creating build/lib/iris/tests/results/cube_slice
+
+copying lib/iris/tests/results/cube_slice/2d_intersect_and_reverse.cml -> build/lib/iris/tests/results/cube_slice
+
+copying lib/iris/tests/results/cube_slice/2d_orig.cml -> build/lib/iris/tests/results/cube_slice
+
+copying lib/iris/tests/results/cube_slice/2d_to_0d_cube_slice.cml -> build/lib/iris/tests/results/cube_slice
+
+copying lib/iris/tests/results/cube_slice/2d_to_1d_cube_multi_slice.cml -> build/lib/iris/tests/results/cube_slice
+
+copying lib/iris/tests/results/cube_slice/2d_to_1d_cube_multi_slice2.cml -> build/lib/iris/tests/results/cube_slice
+
+copying lib/iris/tests/results/cube_slice/2d_to_1d_cube_multi_slice3.cml -> build/lib/iris/tests/results/cube_slice
+
+copying lib/iris/tests/results/cube_slice/2d_to_1d_cube_slice.cml -> build/lib/iris/tests/results/cube_slice
+
+copying lib/iris/tests/results/cube_slice/2d_to_2d_revesed.cml -> build/lib/iris/tests/results/cube_slice
+
+copying lib/iris/tests/results/cube_slice/2d_transposed.cml -> build/lib/iris/tests/results/cube_slice
+
+copying lib/iris/tests/results/cube_slice/real_data_dual_tuple_indexing1.cml -> build/lib/iris/tests/results/cube_slice
+
+copying lib/iris/tests/results/cube_slice/real_data_dual_tuple_indexing2.cml -> build/lib/iris/tests/results/cube_slice
+
+copying lib/iris/tests/results/cube_slice/real_data_dual_tuple_indexing3.cml -> build/lib/iris/tests/results/cube_slice
+
+copying lib/iris/tests/results/cube_slice/real_empty_data_indexing.cml -> build/lib/iris/tests/results/cube_slice
+
+creating build/lib/iris/tests/results/cube_to_pp
+
+copying lib/iris/tests/results/cube_to_pp/append_multi.txt -> build/lib/iris/tests/results/cube_to_pp
+
+copying lib/iris/tests/results/cube_to_pp/append_single.txt -> build/lib/iris/tests/results/cube_to_pp
+
+copying lib/iris/tests/results/cube_to_pp/depth.latitude.pp.txt -> build/lib/iris/tests/results/cube_to_pp
+
+copying lib/iris/tests/results/cube_to_pp/depth.time.pp.txt -> build/lib/iris/tests/results/cube_to_pp
+
+copying lib/iris/tests/results/cube_to_pp/eta.latitude.pp.txt -> build/lib/iris/tests/results/cube_to_pp
+
+copying lib/iris/tests/results/cube_to_pp/pressure.latitude.pp.txt -> build/lib/iris/tests/results/cube_to_pp
+
+copying lib/iris/tests/results/cube_to_pp/pressure.time.pp.txt -> build/lib/iris/tests/results/cube_to_pp
+
+copying lib/iris/tests/results/cube_to_pp/replace_multi.txt -> build/lib/iris/tests/results/cube_to_pp
+
+copying lib/iris/tests/results/cube_to_pp/replace_single.txt -> build/lib/iris/tests/results/cube_to_pp
+
+copying lib/iris/tests/results/cube_to_pp/simple.txt -> build/lib/iris/tests/results/cube_to_pp
+
+copying lib/iris/tests/results/cube_to_pp/user_rules.txt -> build/lib/iris/tests/results/cube_to_pp
+
+creating build/lib/iris/tests/results/derived
+
+copying lib/iris/tests/results/derived/column.cml -> build/lib/iris/tests/results/derived
+
+copying lib/iris/tests/results/derived/no_orog.__str__.txt -> build/lib/iris/tests/results/derived
+
+copying lib/iris/tests/results/derived/no_orog.cml -> build/lib/iris/tests/results/derived
+
+copying lib/iris/tests/results/derived/removed_orog.__str__.txt -> build/lib/iris/tests/results/derived
+
+copying lib/iris/tests/results/derived/removed_orog.cml -> build/lib/iris/tests/results/derived
+
+copying lib/iris/tests/results/derived/removed_sigma.__str__.txt -> build/lib/iris/tests/results/derived
+
+copying lib/iris/tests/results/derived/removed_sigma.cml -> build/lib/iris/tests/results/derived
+
+copying lib/iris/tests/results/derived/transposed.cml -> build/lib/iris/tests/results/derived
+
+creating build/lib/iris/tests/results/file_load
+
+copying lib/iris/tests/results/file_load/known_loaders.txt -> build/lib/iris/tests/results/file_load
+
+copying lib/iris/tests/results/file_load/theta_levels.cml -> build/lib/iris/tests/results/file_load
+
+copying lib/iris/tests/results/file_load/u_wind_levels.cml -> build/lib/iris/tests/results/file_load
+
+copying lib/iris/tests/results/file_load/v_wind_levels.cml -> build/lib/iris/tests/results/file_load
+
+copying lib/iris/tests/results/file_load/wind_levels.cml -> build/lib/iris/tests/results/file_load
+
+creating build/lib/iris/tests/results/grib_load
+
+copying lib/iris/tests/results/grib_load/3_layer.cml -> build/lib/iris/tests/results/grib_load
+
+copying lib/iris/tests/results/grib_load/earth_shape_0.cml -> build/lib/iris/tests/results/grib_load
+
+copying lib/iris/tests/results/grib_load/earth_shape_1.cml -> build/lib/iris/tests/results/grib_load
+
+copying lib/iris/tests/results/grib_load/earth_shape_2.cml -> build/lib/iris/tests/results/grib_load
+
+copying lib/iris/tests/results/grib_load/earth_shape_3.cml -> build/lib/iris/tests/results/grib_load
+
+copying lib/iris/tests/results/grib_load/earth_shape_4.cml -> build/lib/iris/tests/results/grib_load
+
+copying lib/iris/tests/results/grib_load/earth_shape_5.cml -> build/lib/iris/tests/results/grib_load
+
+copying lib/iris/tests/results/grib_load/earth_shape_6.cml -> build/lib/iris/tests/results/grib_load
+
+copying lib/iris/tests/results/grib_load/earth_shape_7.cml -> build/lib/iris/tests/results/grib_load
+
+copying lib/iris/tests/results/grib_load/earth_shape_grib1.cml -> build/lib/iris/tests/results/grib_load
+
+copying lib/iris/tests/results/grib_load/ineg_jneg.cml -> build/lib/iris/tests/results/grib_load
+
+copying lib/iris/tests/results/grib_load/ineg_jpos.cml -> build/lib/iris/tests/results/grib_load
+
+copying lib/iris/tests/results/grib_load/ipos_jneg.cml -> build/lib/iris/tests/results/grib_load
+
+copying lib/iris/tests/results/grib_load/ipos_jpos.cml -> build/lib/iris/tests/results/grib_load
+
+copying lib/iris/tests/results/grib_load/rotated.cml -> build/lib/iris/tests/results/grib_load
+
+copying lib/iris/tests/results/grib_load/time_bound_grib1.cml -> build/lib/iris/tests/results/grib_load
+
+copying lib/iris/tests/results/grib_load/time_bound_grib2.cml -> build/lib/iris/tests/results/grib_load
+
+copying lib/iris/tests/results/grib_load/y_fastest.cml -> build/lib/iris/tests/results/grib_load
+
+creating build/lib/iris/tests/results/grib_save
+
+copying lib/iris/tests/results/grib_save/latlon_forecast_plev.grib_compare.txt -> build/lib/iris/tests/results/grib_save
+
+copying lib/iris/tests/results/grib_save/rotated_latlon.grib_compare.txt -> build/lib/iris/tests/results/grib_save
+
+copying lib/iris/tests/results/grib_save/time_mean.grib_compare.txt -> build/lib/iris/tests/results/grib_save
+
+creating build/lib/iris/tests/results/iterate
+
+copying lib/iris/tests/results/iterate/izip_nd_ortho.cml -> build/lib/iris/tests/results/iterate
+
+creating build/lib/iris/tests/results/merge
+
+copying lib/iris/tests/results/merge/dec.cml -> build/lib/iris/tests/results/merge
+
+copying lib/iris/tests/results/merge/multi_split.cml -> build/lib/iris/tests/results/merge
+
+copying lib/iris/tests/results/merge/single_split.cml -> build/lib/iris/tests/results/merge
+
+copying lib/iris/tests/results/merge/theta.cml -> build/lib/iris/tests/results/merge
+
+copying lib/iris/tests/results/merge/theta_two_times.cml -> build/lib/iris/tests/results/merge
+
+copying lib/iris/tests/results/merge/time_triple_duplicate_data.cml -> build/lib/iris/tests/results/merge
+
+copying lib/iris/tests/results/merge/time_triple_independent.cml -> build/lib/iris/tests/results/merge
+
+copying lib/iris/tests/results/merge/time_triple_merging1.cml -> build/lib/iris/tests/results/merge
+
+copying lib/iris/tests/results/merge/time_triple_merging2.cml -> build/lib/iris/tests/results/merge
+
+copying lib/iris/tests/results/merge/time_triple_merging3.cml -> build/lib/iris/tests/results/merge
+
+copying lib/iris/tests/results/merge/time_triple_merging4.cml -> build/lib/iris/tests/results/merge
+
+copying lib/iris/tests/results/merge/time_triple_merging5.cml -> build/lib/iris/tests/results/merge
+
+copying lib/iris/tests/results/merge/time_triple_non_expanding.cml -> build/lib/iris/tests/results/merge
+
+copying lib/iris/tests/results/merge/time_triple_series.cml -> build/lib/iris/tests/results/merge
+
+copying lib/iris/tests/results/merge/time_triple_single_forecast.cml -> build/lib/iris/tests/results/merge
+
+copying lib/iris/tests/results/merge/time_triple_successive_forecasts.cml -> build/lib/iris/tests/results/merge
+
+copying lib/iris/tests/results/merge/time_triple_time_vs_forecast.cml -> build/lib/iris/tests/results/merge
+
+copying lib/iris/tests/results/merge/time_triple_time_vs_ref_time.cml -> build/lib/iris/tests/results/merge
+
+creating build/lib/iris/tests/results/netcdf
+
+copying lib/iris/tests/results/netcdf/netcdf_cell_methods.cml -> build/lib/iris/tests/results/netcdf
+
+copying lib/iris/tests/results/netcdf/netcdf_deferred_index_0.cml -> build/lib/iris/tests/results/netcdf
+
+copying lib/iris/tests/results/netcdf/netcdf_deferred_index_1.cml -> build/lib/iris/tests/results/netcdf
+
+copying lib/iris/tests/results/netcdf/netcdf_deferred_index_2.cml -> build/lib/iris/tests/results/netcdf
+
+copying lib/iris/tests/results/netcdf/netcdf_deferred_mix_0.cml -> build/lib/iris/tests/results/netcdf
+
+copying lib/iris/tests/results/netcdf/netcdf_deferred_mix_1.cml -> build/lib/iris/tests/results/netcdf
+
+copying lib/iris/tests/results/netcdf/netcdf_deferred_slice_0.cml -> build/lib/iris/tests/results/netcdf
+
+copying lib/iris/tests/results/netcdf/netcdf_deferred_slice_1.cml -> build/lib/iris/tests/results/netcdf
+
+copying lib/iris/tests/results/netcdf/netcdf_deferred_slice_2.cml -> build/lib/iris/tests/results/netcdf
+
+copying lib/iris/tests/results/netcdf/netcdf_deferred_tuple_0.cml -> build/lib/iris/tests/results/netcdf
+
+copying lib/iris/tests/results/netcdf/netcdf_deferred_tuple_1.cml -> build/lib/iris/tests/results/netcdf
+
+copying lib/iris/tests/results/netcdf/netcdf_deferred_tuple_2.cml -> build/lib/iris/tests/results/netcdf
+
+copying lib/iris/tests/results/netcdf/netcdf_global_xyt_hires.cml -> build/lib/iris/tests/results/netcdf
+
+copying lib/iris/tests/results/netcdf/netcdf_global_xyt_total.cml -> build/lib/iris/tests/results/netcdf
+
+copying lib/iris/tests/results/netcdf/netcdf_global_xyzt_gems.cml -> build/lib/iris/tests/results/netcdf
+
+copying lib/iris/tests/results/netcdf/netcdf_global_xyzt_gems_iter_0.cml -> build/lib/iris/tests/results/netcdf
+
+copying lib/iris/tests/results/netcdf/netcdf_global_xyzt_gems_iter_1.cml -> build/lib/iris/tests/results/netcdf
+
+copying lib/iris/tests/results/netcdf/netcdf_monotonic.cml -> build/lib/iris/tests/results/netcdf
+
+copying lib/iris/tests/results/netcdf/netcdf_rotated_xy_land.cml -> build/lib/iris/tests/results/netcdf
+
+copying lib/iris/tests/results/netcdf/netcdf_rotated_xyt_precipitation.cml -> build/lib/iris/tests/results/netcdf
+
+copying lib/iris/tests/results/netcdf/netcdf_save_hybrid_height.cdl -> build/lib/iris/tests/results/netcdf
+
+copying lib/iris/tests/results/netcdf/netcdf_save_load_hybrid_height.cml -> build/lib/iris/tests/results/netcdf
+
+copying lib/iris/tests/results/netcdf/netcdf_save_load_ndim_auxiliary.cml -> build/lib/iris/tests/results/netcdf
+
+copying lib/iris/tests/results/netcdf/netcdf_save_multi_0.cdl -> build/lib/iris/tests/results/netcdf
+
+copying lib/iris/tests/results/netcdf/netcdf_save_multi_1.cdl -> build/lib/iris/tests/results/netcdf
+
+copying lib/iris/tests/results/netcdf/netcdf_save_multi_2.cdl -> build/lib/iris/tests/results/netcdf
+
+copying lib/iris/tests/results/netcdf/netcdf_save_ndim_auxiliary.cdl -> build/lib/iris/tests/results/netcdf
+
+copying lib/iris/tests/results/netcdf/netcdf_save_realistic_0d.cdl -> build/lib/iris/tests/results/netcdf
+
+copying lib/iris/tests/results/netcdf/netcdf_save_realistic_4d.cdl -> build/lib/iris/tests/results/netcdf
+
+copying lib/iris/tests/results/netcdf/netcdf_save_realistic_4d_no_hybrid.cdl -> build/lib/iris/tests/results/netcdf
+
+copying lib/iris/tests/results/netcdf/netcdf_save_single.cdl -> build/lib/iris/tests/results/netcdf
+
+copying lib/iris/tests/results/netcdf/netcdf_units_0.cml -> build/lib/iris/tests/results/netcdf
+
+copying lib/iris/tests/results/netcdf/netcdf_units_1.cml -> build/lib/iris/tests/results/netcdf
+
+copying lib/iris/tests/results/netcdf/save_load_traj.cml -> build/lib/iris/tests/results/netcdf
+
+creating build/lib/iris/tests/results/nimrod
+
+copying lib/iris/tests/results/nimrod/load.cml -> build/lib/iris/tests/results/nimrod
+
+creating build/lib/iris/tests/results/pp_rules
+
+copying lib/iris/tests/results/pp_rules/global.cml -> build/lib/iris/tests/results/pp_rules
+
+copying lib/iris/tests/results/pp_rules/invalid_units.cml -> build/lib/iris/tests/results/pp_rules
+
+copying lib/iris/tests/results/pp_rules/lbproc_mean_max_min.cml -> build/lib/iris/tests/results/pp_rules
+
+copying lib/iris/tests/results/pp_rules/lbtim_2.cml -> build/lib/iris/tests/results/pp_rules
+
+copying lib/iris/tests/results/pp_rules/ocean_depth.cml -> build/lib/iris/tests/results/pp_rules
+
+copying lib/iris/tests/results/pp_rules/rotated_uk.cml -> build/lib/iris/tests/results/pp_rules
+
+creating build/lib/iris/tests/results/regrid
+
+copying lib/iris/tests/results/regrid/airpress_on_theta_0d.cml -> build/lib/iris/tests/results/regrid
+
+copying lib/iris/tests/results/regrid/airpress_on_theta_1d.cml -> build/lib/iris/tests/results/regrid
+
+copying lib/iris/tests/results/regrid/airpress_on_theta_2d.cml -> build/lib/iris/tests/results/regrid
+
+copying lib/iris/tests/results/regrid/airpress_on_theta_3d.cml -> build/lib/iris/tests/results/regrid
+
+copying lib/iris/tests/results/regrid/bilinear_larger.cml -> build/lib/iris/tests/results/regrid
+
+copying lib/iris/tests/results/regrid/bilinear_larger_lon_extrapolate_left.cml -> build/lib/iris/tests/results/regrid
+
+copying lib/iris/tests/results/regrid/bilinear_larger_lon_extrapolate_right.cml -> build/lib/iris/tests/results/regrid
+
+copying lib/iris/tests/results/regrid/bilinear_smaller.cml -> build/lib/iris/tests/results/regrid
+
+copying lib/iris/tests/results/regrid/bilinear_smaller_lon_align_left.cml -> build/lib/iris/tests/results/regrid
+
+copying lib/iris/tests/results/regrid/bilinear_smaller_lon_align_right.cml -> build/lib/iris/tests/results/regrid
+
+copying lib/iris/tests/results/regrid/low_med_high.cml -> build/lib/iris/tests/results/regrid
+
+copying lib/iris/tests/results/regrid/theta_on_airpress_0d.cml -> build/lib/iris/tests/results/regrid
+
+copying lib/iris/tests/results/regrid/theta_on_airpress_1d.cml -> build/lib/iris/tests/results/regrid
+
+copying lib/iris/tests/results/regrid/theta_on_airpress_2d.cml -> build/lib/iris/tests/results/regrid
+
+copying lib/iris/tests/results/regrid/theta_on_airpress_3d.cml -> build/lib/iris/tests/results/regrid
+
+creating build/lib/iris/tests/results/stock
+
+copying lib/iris/tests/results/stock/realistic_4d.cml -> build/lib/iris/tests/results/stock
+
+creating build/lib/iris/tests/results/system
+
+copying lib/iris/tests/results/system/supported_filetype_.grib2.cml -> build/lib/iris/tests/results/system
+
+copying lib/iris/tests/results/system/supported_filetype_.nc.cml -> build/lib/iris/tests/results/system
+
+copying lib/iris/tests/results/system/supported_filetype_.pp.cml -> build/lib/iris/tests/results/system
+
+creating build/lib/iris/tests/results/trajectory
+
+copying lib/iris/tests/results/trajectory/big_cube.cml -> build/lib/iris/tests/results/trajectory
+
+copying lib/iris/tests/results/trajectory/constant_latitude.cml -> build/lib/iris/tests/results/trajectory
+
+copying lib/iris/tests/results/trajectory/hybrid_height.cml -> build/lib/iris/tests/results/trajectory
+
+copying lib/iris/tests/results/trajectory/single_point.cml -> build/lib/iris/tests/results/trajectory
+
+copying lib/iris/tests/results/trajectory/tri_polar_latitude_slice.cml -> build/lib/iris/tests/results/trajectory
+
+copying lib/iris/tests/results/trajectory/zigzag.cml -> build/lib/iris/tests/results/trajectory
+
+creating build/lib/iris/tests/results/uri_callback
+
+copying lib/iris/tests/results/uri_callback/grib_global.cml -> build/lib/iris/tests/results/uri_callback
+
+copying lib/iris/tests/results/uri_callback/pp_global.cml -> build/lib/iris/tests/results/uri_callback
+
+creating build/lib/iris/tests/results/usecases
+
+creating build/lib/iris/tests/results/usecases/pp_to_cf_conversion
+
+creating build/lib/iris/tests/results/usecases/pp_to_cf_conversion/from_netcdf
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/from_netcdf/000003000000.03.236.000128.1990.12.01.00.00.b_0.cml -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/from_netcdf
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/from_netcdf/000003000000.03.236.004224.1990.12.01.00.00.b_0.cml -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/from_netcdf
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/from_netcdf/000003000000.03.236.008320.1990.12.01.00.00.b_0.cml -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/from_netcdf
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/from_netcdf/000003000000.16.202.000128.1860.09.01.00.00.b_0.cml -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/from_netcdf
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/from_netcdf/001000000000.00.000.000000.1860.01.01.00.00.f.b_0.cml -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/from_netcdf
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/from_netcdf/002000000000.44.101.131200.1920.09.01.00.00.b_0.cml -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/from_netcdf
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/from_netcdf/008000000000.44.101.000128.1890.09.01.00.00.b_0.cml -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/from_netcdf
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/from_netcdf/12187.b_0.cml -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/from_netcdf
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/from_netcdf/HadCM2_ts_SAT_ann_18602100.b_0.cml -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/from_netcdf
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/from_netcdf/aaxzc_level_lat_orig.b_0.cml -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/from_netcdf
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/from_netcdf/aaxzc_lon_lat_press_orig.b_0.cml -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/from_netcdf
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/from_netcdf/aaxzc_lon_lat_several.b_0.cml -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/from_netcdf
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/from_netcdf/aaxzc_n10r13xy.b_0.cml -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/from_netcdf
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/from_netcdf/aaxzc_time_press.b_0.cml -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/from_netcdf
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/from_netcdf/aaxzc_tseries.b_0.cml -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/from_netcdf
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/from_netcdf/abcza_pa19591997_daily_29.b_0.cml -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/from_netcdf
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/from_netcdf/abcza_pa19591997_daily_29.b_1.cml -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/from_netcdf
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/from_netcdf/abcza_pa19591997_daily_29.b_2.cml -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/from_netcdf
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/from_netcdf/abxpa_press_lat.b_0.cml -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/from_netcdf
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/from_netcdf/integer.b_0.cml -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/from_netcdf
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/from_netcdf/model.b_0.cml -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/from_netcdf
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/from_netcdf/ocean_xsect.b_0.cml -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/from_netcdf
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/from_netcdf/st0fc699.b_0.cml -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/from_netcdf
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/from_netcdf/st0fc942.b_0.cml -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/from_netcdf
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/from_netcdf/st30211.b_0.cml -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/from_netcdf
+
+creating build/lib/iris/tests/results/usecases/pp_to_cf_conversion/from_pp
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/from_pp/000003000000.03.236.000128.1990.12.01.00.00.b.cml -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/from_pp
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/from_pp/000003000000.03.236.004224.1990.12.01.00.00.b.cml -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/from_pp
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/from_pp/000003000000.03.236.008320.1990.12.01.00.00.b.cml -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/from_pp
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/from_pp/000003000000.16.202.000128.1860.09.01.00.00.b.cml -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/from_pp
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/from_pp/001000000000.00.000.000000.1860.01.01.00.00.f.b.cml -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/from_pp
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/from_pp/002000000000.44.101.131200.1920.09.01.00.00.b.cml -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/from_pp
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/from_pp/008000000000.44.101.000128.1890.09.01.00.00.b.cml -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/from_pp
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/from_pp/12187.b.cml -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/from_pp
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/from_pp/HadCM2_ts_SAT_ann_18602100.b.cml -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/from_pp
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/from_pp/aaxzc_level_lat_orig.b.cml -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/from_pp
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/from_pp/aaxzc_lon_lat_press_orig.b.cml -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/from_pp
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/from_pp/aaxzc_lon_lat_several.b.cml -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/from_pp
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/from_pp/aaxzc_n10r13xy.b.cml -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/from_pp
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/from_pp/aaxzc_time_press.b.cml -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/from_pp
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/from_pp/aaxzc_tseries.b.cml -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/from_pp
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/from_pp/abcza_pa19591997_daily_29.b.cml -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/from_pp
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/from_pp/abxpa_press_lat.b.cml -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/from_pp
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/from_pp/integer.b.cml -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/from_pp
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/from_pp/model.b.cml -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/from_pp
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/from_pp/ocean_xsect.b.cml -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/from_pp
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/from_pp/st0fc699.b.cml -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/from_pp
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/from_pp/st0fc942.b.cml -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/from_pp
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/from_pp/st30211.b.cml -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/from_pp
+
+creating build/lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/000003000000.03.236.000128.1990.12.01.00.00.b_0.cdl -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/000003000000.03.236.004224.1990.12.01.00.00.b_0.cdl -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/000003000000.03.236.008320.1990.12.01.00.00.b_0.cdl -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/000003000000.16.202.000128.1860.09.01.00.00.b_0.cdl -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/001000000000.00.000.000000.1860.01.01.00.00.f.b_0.cdl -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/002000000000.44.101.131200.1920.09.01.00.00.b_0.cdl -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/008000000000.44.101.000128.1890.09.01.00.00.b_0.cdl -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/12187.b_0.cdl -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/HadCM2_ts_SAT_ann_18602100.b_0.cdl -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/aaxzc_level_lat_orig.b_0.cdl -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/aaxzc_lon_lat_press_orig.b_0.cdl -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/aaxzc_lon_lat_several.b_0.cdl -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/aaxzc_n10r13xy.b_0.cdl -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/aaxzc_time_press.b_0.cdl -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/aaxzc_tseries.b_0.cdl -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/abcza_pa19591997_daily_29.b_0.cdl -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/abcza_pa19591997_daily_29.b_1.cdl -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/abcza_pa19591997_daily_29.b_2.cdl -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/abxpa_press_lat.b_0.cdl -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/integer.b_0.cdl -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/model.b_0.cdl -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/ocean_xsect.b_0.cdl -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/st0fc699.b_0.cdl -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/st0fc942.b_0.cdl -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/st30211.b_0.cdl -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf
+
+creating build/lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/cf_checker
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/cf_checker/000003000000.03.236.000128.1990.12.01.00.00.b_0.txt -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/cf_checker
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/cf_checker/000003000000.03.236.004224.1990.12.01.00.00.b_0.txt -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/cf_checker
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/cf_checker/000003000000.03.236.008320.1990.12.01.00.00.b_0.txt -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/cf_checker
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/cf_checker/000003000000.16.202.000128.1860.09.01.00.00.b_0.txt -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/cf_checker
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/cf_checker/001000000000.00.000.000000.1860.01.01.00.00.f.b_0.txt -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/cf_checker
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/cf_checker/002000000000.44.101.131200.1920.09.01.00.00.b_0.txt -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/cf_checker
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/cf_checker/008000000000.44.101.000128.1890.09.01.00.00.b_0.txt -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/cf_checker
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/cf_checker/12187.b_0.txt -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/cf_checker
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/cf_checker/HadCM2_ts_SAT_ann_18602100.b_0.txt -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/cf_checker
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/cf_checker/aaxzc_level_lat_orig.b_0.txt -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/cf_checker
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/cf_checker/aaxzc_lon_lat_press_orig.b_0.txt -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/cf_checker
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/cf_checker/aaxzc_lon_lat_several.b_0.txt -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/cf_checker
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/cf_checker/aaxzc_n10r13xy.b_0.txt -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/cf_checker
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/cf_checker/aaxzc_time_press.b_0.txt -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/cf_checker
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/cf_checker/aaxzc_tseries.b_0.txt -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/cf_checker
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/cf_checker/abcza_pa19591997_daily_29.b_0.txt -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/cf_checker
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/cf_checker/abcza_pa19591997_daily_29.b_1.txt -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/cf_checker
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/cf_checker/abcza_pa19591997_daily_29.b_2.txt -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/cf_checker
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/cf_checker/abxpa_press_lat.b_0.txt -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/cf_checker
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/cf_checker/integer.b_0.txt -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/cf_checker
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/cf_checker/model.b_0.txt -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/cf_checker
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/cf_checker/ocean_xsect.b_0.txt -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/cf_checker
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/cf_checker/st0fc699.b_0.txt -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/cf_checker
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/cf_checker/st0fc942.b_0.txt -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/cf_checker
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/cf_checker/st30211.b_0.txt -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/to_netcdf/cf_checker
+
+creating build/lib/iris/tests/results/usecases/pp_to_cf_conversion/to_pp
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/to_pp/000003000000.03.236.000128.1990.12.01.00.00.b.pp.txt -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/to_pp
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/to_pp/000003000000.03.236.004224.1990.12.01.00.00.b.pp.txt -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/to_pp
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/to_pp/000003000000.03.236.008320.1990.12.01.00.00.b.pp.txt -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/to_pp
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/to_pp/000003000000.16.202.000128.1860.09.01.00.00.b.pp.txt -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/to_pp
+
+copying lib/iris/tests/results/usecases/pp_to_cf_conversion/to_pp/001000000000.00.000.000000.1860.01.01.00.00.f.b.pp.txt -> build/lib/iris/tests/results/usecases/pp_to_cf_conversion/to_pp
+
+copying lib/iris/fileformats/_pyke_rules/fc_rules_cf.krb -> build/lib/iris/fileformats/_pyke_rules
+
+copying lib/iris/tests/stock_arrays.npz -> build/lib/iris/tests
+
+copying lib/iris/tests/stock_mdi_arrays.npz -> build/lib/iris/tests
+
+/net/home/h05/itpp/py_envs/tmp_try/bin/python tools/generate_std_names.py etc/cf-standard-name-table.xml build/lib/iris/std_names.py
+
+Traceback (most recent call last):
+
+  File "<string>", line 1, in <module>
+
+  File "/net/home/h05/itpp/py_envs/tmp_try/build/Iris6/setup.py", line 308, in <module>
+
+    'std_names': MakeStdNames, 'header_check': HeaderCheck},
+
+  File "/home/h05/itpp/fcm/iris/sci/lib/python2.7/distutils/core.py", line 152, in setup
+
+    dist.run_commands()
+
+  File "/home/h05/itpp/fcm/iris/sci/lib/python2.7/distutils/dist.py", line 953, in run_commands
+
+    self.run_command(cmd)
+
+  File "/home/h05/itpp/fcm/iris/sci/lib/python2.7/distutils/dist.py", line 972, in run_command
+
+    cmd_obj.run()
+
+  File "/net/home/h05/itpp/py_envs/tmp_try/lib/python2.7/site-packages/setuptools-0.6c11-py2.7.egg/setuptools/command/install.py", line 56, in run
+
+  File "/home/h05/itpp/fcm/iris/sci/lib/python2.7/distutils/command/install.py", line 563, in run
+
+    self.run_command('build')
+
+  File "/home/h05/itpp/fcm/iris/sci/lib/python2.7/distutils/cmd.py", line 326, in run_command
+
+    self.distribution.run_command(command)
+
+  File "/home/h05/itpp/fcm/iris/sci/lib/python2.7/distutils/dist.py", line 972, in run_command
+
+    cmd_obj.run()
+
+  File "/home/h05/itpp/fcm/iris/sci/lib/python2.7/distutils/command/build.py", line 127, in run
+
+    self.run_command(cmd_name)
+
+  File "/home/h05/itpp/fcm/iris/sci/lib/python2.7/distutils/cmd.py", line 326, in run_command
+
+    self.distribution.run_command(command)
+
+  File "/home/h05/itpp/fcm/iris/sci/lib/python2.7/distutils/dist.py", line 972, in run_command
+
+    cmd_obj.run()
+
+  File "/net/home/h05/itpp/py_envs/tmp_try/build/Iris6/setup.py", line 241, in run
+
+    import iris.fileformats._pyke_rules
+
+  File "build/lib/iris/__init__.py", line 105, in <module>
+
+    import iris.cube
+
+  File "build/lib/iris/cube.py", line 35, in <module>
+
+    import iris.analysis
+
+  File "build/lib/iris/analysis/__init__.py", line 38, in <module>
+
+    import iris.coords
+
+  File "build/lib/iris/coords.py", line 34, in <module>
+
+    import iris.aux_factory
+
+  File "build/lib/iris/aux_factory.py", line 28, in <module>
+
+    from iris._cube_coord_common import CFVariableMixin, LimitedAttributeDict
+
+  File "build/lib/iris/_cube_coord_common.py", line 24, in <module>
+
+    import iris.unit
+
+  File "build/lib/iris/unit.py", line 33, in <module>
+
+    import netcdftime
+
+ImportError: No module named netcdftime
+
+----------------------------------------
+Command /net/home/h05/itpp/py_envs/tmp_try/bin/python -c "import setuptools;__file__='/net/home/h05/itpp/py_envs/tmp_try/build/Iris6/setup.py';exec(compile(open(__file__).read().replace('\r\n', '\n'), __file__, 'exec'))" install --record /var/tmp/pip-dNRjQf-record/install-record.txt --single-version-externally-managed --install-headers /net/home/h05/itpp/py_envs/tmp_try/include/site/python2.7 failed with error code 1 in /net/home/h05/itpp/py_envs/tmp_try/build/Iris6
+Storing complete log in /home/h05/itpp/.pip/pip.log

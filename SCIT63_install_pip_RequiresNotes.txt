@@ -1,0 +1,558 @@
+Notes posted on GG Iris-Dev inviting comments
+  https://groups.google.com/forum/?hl=en-GB&fromgroups=#!topic/scitools-iris-dev/jKkyfdNCNUQ
+
+NOTE: Ed posted some suggestions + advice
+
+
+Requirements info, modified from Iris v1.1 documentation ...
+
+    Build requirements
+        python >= 2.7
+        numpy >= 1.6
+        scipy >= 0.10
+        udunits2 >= 2.1.24
+        netcdf4-python >= 0.9.9
+        PyKE >= 1.1.1
+        setuptools >= 0.6c11
+        cartopy >= 0.5.0
+    
+    Optional
+        basemap >= 1.0
+                ***NOT*** currently optional, will become so soon (https://github.com/SciTools/iris/pull/290)
+        graphviz >= 2.18
+                ?? tests ??  -- not at all clear if this is used by Iris/Cartopy **themselves**, as opp the user himself
+        grib-api >= 1.9.16
+                ???want???
+        matplotlib >= 1.2.0
+                ???want???
+        mock >= 1.0.1
+                for tests
+        nose >= 1.1.2 or later (http://nose.readthedocs.org/en/latest/)
+                for *cartopy* tests
+        PythonImagingLibrary >= 1.1.7 or later (http://effbot.org/zone/pil-index.htm)
+                **NEED** for cartopy.io (image collections)
+        shapely >= 1.2.14
+                **NEED** for cartopy
+    
+    Packed PP
+        The libmo_unpack library can be used by Iris for decoding/unpacking PP files or Fields files that use an lbpack value of 1 or 4. 
+        This library is open source, licensed under the 2-clause BSD licence. It can be obtained from http://puma.nerc.ac.uk/trac/UM_TOOLS/wiki/unpack.
+        Use of this library is not enabled by default. If this library is available its use can be enabled by installing Iris with the following command:
+          python setup.py --with-unpack install
+        Note that if this library and/or its associated header files are installed in a custom location 
+        then additional compiler arguments may need to be passed in 
+        to ensure that the Python extension module linking against it builds correctly:
+        python setup.py --with-unpack build_ext -I <custom include dir> \ 
+              -L <custom link-time libdir> -R <custom runtime libdir> install
+
+NOTE: 20130109 - Andy says 
+  * not to worry about anything PP (including unpacks) for now
+  * do worry about 'sensible' usage: various stuff effectively **is** "required"
+      --> basemap(for now), grib-api, matplotlib, mock(for tests), PIL, shapely
+      leave out (for now) ? == basemap(when poss), graphviz, nose
+
+20130110
+got first test install/upload 'iris-distribution-test' package working from PyPI
+    - plain setuptools, using setup.py only
+    - "pip install" works in a virtual env
+
+Thinking about dependencies.  Advice is
+    *essential* dependencies can be captured in setup.py with setup() "install_requires" options
+        - but these are *inflexible*, so should only specify broadly what is needed
+    pip adds a 'requirements file' that has finer granularity
+        - including 'recommended' as well as 'required'
+
+Asked Andy about permissions
+  (procedural as in "haven't had permission", and practical as in "won't let me")
+  should be procedurally ok : won't be getting anything we haven't already approved
+  practically, if have any problems can use dirty laptop + external net (yellow cable)
+
+Ed says we don't need to consider system libraries at present
+
+Thinking about install scripts
+  Ed's for OS-X
+    copy at : /net/home/h05/itpp/Iris/sprints/sprint_20130107/SCIT63_install_pip/esc24_OSX_install_20130110.txt
+  Byron's originally for Ubuntu --> towards Travis-CI  (has become a .yml, still much like the Ubuntu install script but now enhanced)
+    copy at : /net/home/h05/itpp/Iris/sprints/sprint_20130107/SCIT63_install_pip/bblay_travis_20130110.yml
+
+
+Looking at Ed's, questions arise
+  - why instructions, not actual script?  (seems mostly close)
+  - why 'sudo python setup.py' --i.e. why the "sudo" ??
+  - why "vi) Add .pth file to virtualenv's site-packages so that 'import gribapi' works" 
+      --i.e. why can't we actually "setup.py install" it ?
+
+NOTE: grib-install problem noted on GG/Iris-Dev by bb :
+  -- https://groups.google.com/forum/#!topic/scitools-iris-dev/KQRz28JhBCc
+  -- """
+       they've changed the install procedure ...
+       they've changed the folder name from *gribapi* to *grib_api*
+       we need to make a softlink now because *setup.py* has been removed
+     """
+
+Looking into prerequisites
+  "pip install numpy" seems to work ""sometimes"" ?
+  "pip install scipy" now also apparently working  -- BUT REQUIRES numpy (must do first)
+
+
+20130111
+tried to DRY the Iris version, but every method seems to have problems
+  -- 'fixed' for distrib-test-2, but requires to import the target module.
+    -- this is not desirable, for a number of reasons !
+
+problems with process..
+    something is caching the downloads, so we have a problem with updating things
+      - upgrading version is not itself enough?
+      - Have been creating new PyPI projects (Iris, Iris1, Iris2 ...)
+    pip install runs downloaded setup.py "egg_info" for dependencies
+     - often has unresolved dependencies : problems because you don't install stuff till *after* (!!)
+        - e.g. original Iris setup.py imports numpy and nose --> fail to install  ((NOW FIXED...))
+        - more seriously, now find that scipy install ***requires numpy***
+===> arrghh!
+
+
+20130114
+confirmed that 'pip install scipy' itself does not work due to Numpy dependence within setup.py
+ == RATS!
+followed up with web-search (+ StackOverflow in particular)
+
+Versions...
+  we currently have scipy 0.10, which *** did not have this problem *** (you can install it in one)
+   -- but they advise in any case that you DO NOT build from source unless you have a real need
+ scipy 0.10 requires numpy >= 1.4.1
+ scipy 0.11 requires numpy >= 1.5.0
+ ( we have "assumed" Iris needs scipy >= 0.10.0, only because that is what we have )
+
+0.11 was released last September
+ we presumably have not tested with latest versions ?
+-->  discussed with Ed, who says stick to our current declarations in Installer guide:
+  = numpy > 0.1
+  = scipy > 
+
+The problem of setup dependencies is known + stalled (~ 1 year)
+  http://projects.scipy.org/scipy/ticket/1429
+    :  SciPy think this is pip problem + will not change to resolve
+  https://github.com/pypa/pip/issues/25
+    :  Pip admits there is a problem but no proposals to fix
+    :  problem relates to USE of setup.py to establish dependencies
+      - apparently, setuptools/distutils works this way + that is it for now
+  http://stackoverflow.com/questions/11797688/matplotlib-requirements-with-pip-install-in-virtualenv
+    : similar problem installing matplotlib
+
+
+
+conclusions
+  - can only be "solved" by fixing scipy itself (issue exists ="will not fix")
+  - few complaints resulting, since release in September
+  - no-one really expects this to "just work" anyway ??
+  - THEY RECOMMEND that you do not build it anyway (SciPy "INSTALL.TXT")
+
+things to do
+  retain upload-to-PyPI requirement
+  resolve the minimum dependency problems for an install
+  revise installation instructions
+  ?? same for cartopy ??
+  
+
+NEXT...
+install numpy + try again.  scipy now installs ok.  Iris still fails...
+
+now looks like Iris will install, but falls over because (Iris)setup.py install
+depends on **pyke**
+
+-- also avoided (??for now??)
+
+Having got nump+scipy, "install Iris5" now fails on NetCDF4
+  -- see /home/h05/itpp/Iris/sprints/sprint_20130107/SCIT63_install_pip/install_output_20130114_1653.txt
+  -- seems to find the netCDF4 library dir, but not the includes
+  -- presumably because the MOSciTools install (rpm) is non-dev ?
+  -- download to ~/nchdrs + "export NETCDF4_DIR=/home/h05/itpp/nchdrs"
+      --> WORKS !
+
+** ? SHOULD BE OK IN 'REAL' (where user has installed netCDF4 libs themself)
+
+uninstall and re-try in the main env with this settings...
+ --> /home/h05/itpp/Iris/sprints/sprint_20130107/SCIT63_install_pip/install_output_20130114_1747.txt
+ --> "pyke" problem again ...
+
+read up on install_requires/setup_requires meaning + added setup_requires including Pyke
+tried then re-implement NETCDF4_DIR
+tried again, need to fix project name again
+re-pip "install Iris6"
+  --> /home/h05/itpp/Iris/sprints/sprint_20130107/SCIT63_install_pip/install_output_20130115_1049.txt
+
+Now sticks because "netcdftime" is needed
+ -- ??is this part of netCDF4 ??
+   -- trying eval in separate env : NOTE netCDF4 ***ALSO*** requires numpy
+      -- (so will still need that)
+      -- yes, that comes with netCDF4
+
+VERSION 7 : include netCDF in 'setup_requires'
+  -->  /home/h05/itpp/Iris/sprints/sprint_20130107/SCIT63_install_pip/install_output_20130115_1108.txt
+This fails executing "tools/generate_std_names.py etc/cf-standard-name-table.xml build/lib/iris/std_names.py"
+  -- doing the generate-standard-names ?
+  -- not clear why (to me)
+
+
+start new install with all pre-requisites to investigate Iris install
+  -- intending to use **manual** install, for speed..
+: make ~/py_envs/tmpall
+: pip install..
+    numpy
+    scipy
+    Pyrex  ****NOTE: needed when installing netCDF4 ****
+      -- Don't think previous version did that
+      -- our exisiting is  : 0.9.9  == Dec 2011
+      -- latest is         : 1.0.2  == Nov 21 2012
+    netCDF4 (don't forget the NETCDF4_DIR !)
+    pyke
+: now try to download + install the lot...
+    - mkdir dist_i7
+    - cd dist_i7
+    - tar -xf /home/h05/itpp/git/iris/iris_main/dist/Iris7\-1.99.0\-xdistrev2.tar.g
+    - cd ..
+    - bin/pip install dist_i7/Iris7\-1.99.0\-xdistrev2/
+
+It has now actually **INSTALLED** nose, pshp, shapely, mock
+But failed to complete on Iris(7) itself, just as previously
+
+It looks from traceback that the basic problem is locating udunits2
+ -- Phil suggests this won't be a problem if this is installed 'normally'
+So try..
+  export LD_LIBRARY_PATH=/usr/local/sci/lib/libudunits2.so:$LD_LIBRARY_PATH
+  -- does not work : ctypes.utils.find_library does not use this
+
+Can't find an os-generic workaround for this, or in fact any workaround at all
+JUST FOR NOW: tweak code to read an environment setting UDUNITS2_PATH
+ - this tweak is only temporary, and **MUST NOT** go into master
+
+Now find that we need cartopy...
+enabled a local build with a PYTHONPATH setting
+  - export PYTHONPATH= 
+  - rebuild using current "make.sh", which links to Ed's proj4
+  - this can't be used for standard install (but that should be ok??)
+
+**** NOW IT INSTALLS !! ****
+
+Ideally, we would also download+build Cartopy
+ -- it only needs doing alongside, 
+
+
+STILL TO-DO
+    put Cartopy itself must exist on PyPI
+    make cartopy a setup_requires
+    ?? enable install_requires for matplotlib and grib-api ??
+
+grib_api is a further problem, as it is external
+  FOR NOW: 
+    cd ve-dir/lib/python2.7/site-packages
+    ln -s ln -s /usr/local/sci/lib/python2.7/site\-packages/grib_api/ .
+    echo grib_api >./gribapi.pth
+
+Other Settings reminders ..
+    (tmpall)itpp@eld238: /net/home/h05/itpp/py_envs/tmpall > echo $NETCDF4_DIR 
+    /home/h05/itpp/nchdrs
+    (tmpall)itpp@eld238: /net/home/h05/itpp/py_envs/tmpall > echo $UDUNITS2_PATH 
+    /usr/local/sci/lib/libudunits2.so
+
+NOTE FOR NOW - cartopy is also 'assumed'
+  - we also have to leave it OUT of the install/setup_requires,
+    as it has no PyPI presence (I presume)
+  - though it is still NEEDED to install (to load iris, to build std_names)
+
+Install now goes like this...
+    bin/pip install dist_i7/Iris7\-1.99.0\-xdistrev2.tar.gz
+      ...
+    Successfully installed nose pyshp shapely mock pyke Iris7
+
+Tests won't run unless we install matplotlib...
+
+running tests as "cd ~/git/iris/iris_main; python setup.py test"
+  -- NB now provided by "nose".  Not sure of the interface now.
+
+Only 1 fails, but this implies we are missing "pyproj"
+  -- it is not Cartopy that needs this, by iris.analysis.cartography !!
+
+Currently can't install pyproj cos it won't build without PROJ_DIR=
+  - supposedly the "proj4 install directory"
+  - """
+                Downloading/unpacking pyproj
+                  Downloading pyproj-1.8.1.tar.gz
+                  Running setup.py egg_info for package pyproj
+                    Traceback (most recent call last):
+                      File "<string>", line 16, in <module>
+                      File "/net/home/h05/itpp/py_envs/tmpall/build/pyproj/setup.py", line 7, in <module>
+                        raise KeyError('please set the environment variable PROJ_DIR to point to the location of your proj.4 installation')
+                    KeyError: 'please set the environment variable PROJ_DIR to point to the location of your proj.4 installation'
+                    Complete output from command python setup.py egg_info:
+                    Traceback (most recent call last):
+                
+                  File "<string>", line 16, in <module>
+                
+                  File "/net/home/h05/itpp/py_envs/tmpall/build/pyproj/setup.py", line 7, in <module>
+                
+                    raise KeyError('please set the environment variable PROJ_DIR to point to the location of your proj.4 installation')
+                
+                KeyError: 'please set the environment variable PROJ_DIR to point to the location of your proj.4 installation'
+
+     """
+
+NEXT-TO-DO : 
+  add in this dependency
+  are there more?
+    - ?? checkout all installed for current SciTools
+  any missing package data ?
+    - compare install with standard setup
+
+  check auto-install for matplotlib
+
+
+20130116
+remaining probs
+---------------
+review the whole install process from fresh on laptop
+?? What about 'pip install Cartopy' ??
+see about 'extras' : 
+  nothing in setuptools(Distribute) for normally-does-but-can-exclude ?
+  - means we may have to *insist* on matlotlib, gribapi etc
+netCDF4 needs Pyrex (to install)
+  - that may mean we can't do this automatically after all ?
+
+
+Now checking Cartopy pip-install
+  install depends on Cython
+    -- tried making this 'optional', 
+    claims to install Cython, but then fails on this anyway??
+    -- tried using setuptools version if import fails : still no go
+
+
+20130117
+Found last night that "setup.py install" fails under pip but not directly.
+Seems to be a problem with setuptools, in that it is somehow messing up the
+Cython version of build_ext
+***Seems to be fixed by installing "distribute"***
+  (which patches setuptools, I think?)
+Can't make this go on own machine because it doesn't find proj4
+  -- the PROJ_DIR method only works on pyproj, which we are ***about to lose***
+      -- see https://github.com/SciTools/iris/pull/313
+  -- otherwise, -I/-L etc, only available to "build_ext" (not build/install)
+
+Possible solutions
+  - include "distribute"
+     - 'distribute' project suggests you can auto-enable it.  
+       - Not tested, not sure this is a good plan.
+  - enforce 'setup.py build_ext' first (i.e. doesn't go through pip)
+  - distribute c files + don't use Cython (or distribute) for source build
+     - neater, but potentially awkward?
+  - like previous, but require Cython + pre-compile in the setup pass.
+     - not clear what to hook.
+     - maybe provide *own* (subclass) build_ext, in place of Cython one ?
+
+Philip asked "why use setuptools instead of distutils?"
+  -- have used various setup args not supported by "bare" distutils :
+        setup_requires / install_requires / tests_require
+  -- with "use_setuptools = False" ...
+        itpp@eld238: /home/h05/itpp/git/cartopy/cartopy_main > python setup.py --help        
+        build_ext :  Cython.Distutils.build_ext.build_ext
+        build_ext.__bases__ :  (<class distutils.command.build_ext.build_ext at 0x7f3b7c8304c8>,)
+        VERSION 3 Cartopy setup.py called : [setup.py, --help]
+        Command  from  distutils.cmd.Command
+        Extension  from  distutils.extension.Extension
+        /home/h05/itpp/fcm/iris/sci/lib/python2.7/distutils/dist.py:267: UserWarning: Unknown distribution option: 'setup_requires'
+          warnings.warn(msg)
+        /home/h05/itpp/fcm/iris/sci/lib/python2.7/distutils/dist.py:267: UserWarning: Unknown distribution option: 'install_requires'
+          warnings.warn(msg)
+        /home/h05/itpp/fcm/iris/sci/lib/python2.7/distutils/dist.py:267: UserWarning: Unknown distribution option: 'tests_require'
+          warnings.warn(msg)
+        Common commands: (see '--help-commands' for more)
+         ...
+
+Requiring **any** of setuptools/distribute/distribute2 is a problem ??
+  -- the extra args can be made selectable, seeing if setuptools is imported ?
+
+
+20130118
+--------
+Found that a *subsequent* "import setuptools" is sufficient to avoid
+warnings about setuptools-specific extension args to 'setup()'
+Presumably, this is the "monkey patch" in operation.
+
+Questioned Phil about his "don't use setuptools" remark
+  - inconclusive, he wasn't sure 
+  - except there is nasty stuff in there "somewhere"
+My understanding is that we *need* setuptools-level features (at least) to 
+
+We have setuptools, but not pip/virtualenv
+We don't have distribute/distutils2
+
+If we assume pip, we have setuptools (which pip uses).
+But, we (probably) shouldn't *assume* setuptools in the setup.py itself
+  -- can we fix this to be bare-disutils compliant ??
+
+
+From yesterday's reading, pip *only* does source distribution, 
+whereas setuptools (and distutils) do binary-distribution, too.
+An interesting article about what was (in retrospect) 
+- right with setuptools
+- wrong with pip
+  -- http://lucumr.pocoo.org/2012/6/22/hate-hate-hate-everywhere
+A list of "issues" from this
+  - the monkey-patch issue (what + why)
+  - pth and eggs
+  - binary distributions
+  - Windows installers support
+  - partwise distributions (i.e. semi-independence of project *areas*)
+  - naming reuse vagueness (PyPI/Python "package"s, "eggs" = info, folders, tars/zips)
+  - relocatability of virtualenvs (originally in, but broken ?)
+
+
+========================
+PACKAGING ISSUES SUMMARY
+========================
+
+What is wrong with distutils (SETUP.PY) ???
+  - no requirements chaining
+  - documentation lacks overviews
+    - explains some things, but not the 'set' of features available
+    - e.g. http://docs.python.org/2/distutils/commandref.html#installing-modules-the-install-command-family
+      - this is just laughable
+    - what are the commands?
+      is the command-line help definitive?
+      what does it all mean ?
+      is there a decent overview somewhere ?
+What is right with distutils (SETUP.PY) ???
+  - reliable
+  - absolutely basic standard
+  - PyPI with upload
+
+What is wrong with setuptools (EASY_INSTALL, PTHs, EGGs) ???
+  - too clever, has unexpected behaviour + effects
+  - incomplete documentation, can only be understood with distutils knowledge
+  - a simple list of the concepts/stage/commands is nowhere given
+    - no clear statement of "how" it works + what can be achieved
+    - no statements of what "X" does in terms of invoking other things
+    - no sourcecode visibility either
+      - (unlike e.g. "make", where you can see what is programmed)
+    - not even definitive statements of what it does cover
+      - e.g. what is "build_ext"
+  - 'tests' means unittest only
+  - invasive behaviour of self-installing builds
+What is right with setuptools ???
+  - metadata + dependencies
+  - package data management
+  - powerful extendable design
+  - Pyrex (?? ~= Cython) support  --but is this actually bugged ?? (--> distribute)
+  - PyPI supports it
+  
+
+What is wrong with PiP ???
+  - not a standard item (though that doesn't specifically bother us here)
+  - doesn't do binarys or Windows installers
+  - the only documentation seems to be hopelessly out-of-date
+      - so the HHGTP reference doesn't tally with what it says ?
+        - e.g. "list" command does not exist, this seems to be "freeze"
+        - e.g. "show" command does not exist
+        - e.g. "search" seems not to work at all?
+      - no explanation of how it will call setuptools (etc.)
+What is right with PiP ???
+  - simplified download+install
+  - modules list allows uninstall+upgrade
+  - (supposedly?) supports svn/git/etc
+
+
+It seems pip is the only "simple" solution, 
+  which includes fixing the requirements
+  but will need a set of prior requirements resolving
+    - mostly system libraries (platform specific)
+      - netCDF4
+      - udunits2
+      - numpy (or scipy)
+      - grib_api ??
+      - setuptools ??
+    - a few Python issues
+       - link to gribapi
+       - pre-installs
+          - numpy
+          - Pyrex (for netCDF4 install)
+          - netCDF4 (for dev headers)
+          - distribute (?for Cython)
+          - Cython (for Cartopy  == POSSIBLY NOT? : to test)
+
+optionals...
+  gribapi
+  mpl
+  PIL
+  nose
+  mock
+
+
+Python3 support
+  distutils supported
+  setuptools not supported
+    -- replaced with distribute
+  pip supported
+
+
+
+===================
+PROBLEMS ADDRESSED - LIST
+===================
+List of (specific) things we've had problems with ...
+
+github hosted release       : unachievable/unwise : host releases separately
+
+pip + scipy                 : unavoidably requires numpy (scipy recommends binary anyway?)
+netCDF4 needs headers
+netCDF4 (most recent) needs Pyrex (aka Cython-as-was??)
+gribapi needs .pth
+Cython + setuptools         : require "distribute" to fix Cartopy install
+
+
+(non-essentials?)
+----------------
+options                     : can't do in/out options e.g. "--no-grib"
+gribapi installation        : needs .pth, not clear how we make this clearer?
+
+pyproj -- (should be gone if merge Carwyn's fix)
+
+
+possible still-unresolved ...
+-----------------------
+possible Cython/Pyrex collision on install for netCDF4/Cartopy ??
+possibly can get away with including Cython as setup_requires on Cartopy
+  (given "distribute" is included)
+
+
+=======================
+RESULT SUMMARY  ((current belief status))
+=========================
+
+* various system intalls must be present first
+    netCDF4 (underlying libraries **AND** includes - i.e. '-dev' version)
+    udunits2
+    proj4
+    gribapi
+      -- how do we link this in?
+      -- must be possible to 'install' this into Python too
+
+* numpy must be pre-installed
+
+* ??for non-standard installs, various environment variables must be set??
+    for netcdf/udunits location
+    for proj4 to netcdf (??but maybe not??)
+
+* you can then just do "pip install Iris"
+
+
+=============
+DELIVERY
+============
+Document prior installs to where you can 'just' type "pip install Iris".
+Setup new Scitools PyPI id
+Document release process for new version
+
+
+===========================
+USEFUL NOTES? ::
+  use "pip install --timeout 120 <package>" to overcome timeouts
+    -- use REPEATEDLY, seems to cache parts + eventually work ?

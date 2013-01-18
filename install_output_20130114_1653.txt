@@ -1,0 +1,121 @@
+Downloading/unpacking Iris5
+  Running setup.py egg_info for package Iris5
+    Iris setup.py called : [-c, egg_info, --egg-base, pip-egg-info]
+    
+    warning: no previously-included files matching '*' found under directory 'docs/iris/build'
+    warning: no files found matching '*.cc' under directory 'src'
+    warning: no files found matching '*.cpp' under directory 'src'
+    warning: no files found matching '*.h' under directory 'src'
+Requirement already satisfied (use --upgrade to upgrade): setuptools>=0.6c11 in ./lib/python2.7/site-packages/setuptools-0.6c11-py2.7.egg (from Iris5)
+Requirement already satisfied (use --upgrade to upgrade): numpy>=1.6 in ./lib/python2.7/site-packages (from Iris5)
+Requirement already satisfied (use --upgrade to upgrade): scipy>=0.10 in ./lib/python2.7/site-packages (from Iris5)
+Downloading/unpacking nose (from Iris5)
+  Running setup.py egg_info for package nose
+    
+    no previously-included directories found matching 'doc/.build'
+Downloading/unpacking pyshp (from Iris5)
+  Running setup.py egg_info for package pyshp
+    
+Downloading/unpacking shapely (from Iris5)
+  Running setup.py egg_info for package shapely
+    /net/home/h05/itpp/py_envs/tmp_try/build/shapely/setup.py:9: Warning: Failed to import distribute_setup, continuing without distribute.
+      Warning)
+    /home/h05/itpp/fcm/iris/sci/lib/python2.7/distutils/dist.py:267: UserWarning: Unknown distribution option: 'requires_external'
+      warnings.warn(msg)
+    /home/h05/itpp/fcm/iris/sci/lib/python2.7/distutils/dist.py:267: UserWarning: Unknown distribution option: 'metadata_version'
+      warnings.warn(msg)
+    /home/h05/itpp/fcm/iris/sci/lib/python2.7/distutils/dist.py:267: UserWarning: Unknown distribution option: 'requires_python'
+      warnings.warn(msg)
+    
+Downloading/unpacking mock>=1.0.1 (from Iris5)
+  Running setup.py egg_info for package mock
+    
+    warning: no files found matching '*.png' under directory 'docs'
+    warning: no files found matching '*.css' under directory 'docs'
+    warning: no files found matching '*.html' under directory 'docs'
+    warning: no files found matching '*.js' under directory 'docs'
+Downloading/unpacking pyke (from Iris5)
+  Running setup.py egg_info for package pyke
+    
+    no previously-included directories found matching '.hg'
+    no previously-included directories found matching 'dist'
+    no previously-included directories found matching '*/compiled_krb'
+    no previously-included directories found matching '*/*/compiled_krb'
+    no previously-included directories found matching '*/*/*/compiled_krb'
+    warning: no previously-included files matching '.pyhist' found anywhere in distribution
+    warning: no previously-included files matching '*.pyc' found anywhere in distribution
+    warning: no previously-included files matching '*.pyo' found anywhere in distribution
+    warning: no previously-included files matching '.*.swp' found anywhere in distribution
+    warning: no previously-included files matching '*.orig' found anywhere in distribution
+Downloading/unpacking netCDF4 (from Iris5)
+  Running setup.py egg_info for package netCDF4
+    
+    HDF5_DIR environment variable not set, checking some standard locations ..
+    checking /home/h05/itpp ...
+    checking /usr/local ...
+    checking /sw ...
+    checking /opt ...
+    checking /opt/local ...
+    checking /usr ...
+    HDF5 found in /usr
+    
+    NETCDF4_DIR environment variable not set, checking standard locations..
+    checking /home/h05/itpp ...
+    checking /usr/local ...
+    checking /sw ...
+    checking /opt ...
+    checking /opt/local ...
+    checking /usr ...
+    Traceback (most recent call last):
+      File "<string>", line 16, in <module>
+      File "/net/home/h05/itpp/py_envs/tmp_try/build/netCDF4/setup.py", line 138, in <module>
+        raise ValueError('did not find netCDF version 4 headers')
+    ValueError: did not find netCDF version 4 headers
+    Complete output from command python setup.py egg_info:
+    
+
+HDF5_DIR environment variable not set, checking some standard locations ..
+
+checking /home/h05/itpp ...
+
+checking /usr/local ...
+
+checking /sw ...
+
+checking /opt ...
+
+checking /opt/local ...
+
+checking /usr ...
+
+HDF5 found in /usr
+
+
+
+NETCDF4_DIR environment variable not set, checking standard locations..
+
+checking /home/h05/itpp ...
+
+checking /usr/local ...
+
+checking /sw ...
+
+checking /opt ...
+
+checking /opt/local ...
+
+checking /usr ...
+
+Traceback (most recent call last):
+
+  File "<string>", line 16, in <module>
+
+  File "/net/home/h05/itpp/py_envs/tmp_try/build/netCDF4/setup.py", line 138, in <module>
+
+    raise ValueError('did not find netCDF version 4 headers')
+
+ValueError: did not find netCDF version 4 headers
+
+----------------------------------------
+Command python setup.py egg_info failed with error code 1 in /net/home/h05/itpp/py_envs/tmp_try/build/netCDF4
+Storing complete log in /home/h05/itpp/.pip/pip.log
